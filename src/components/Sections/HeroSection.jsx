@@ -35,7 +35,7 @@ function HeroSection({ onScrollToSection }) {
             Let's Connect
           </button>
           <a 
-            href="/resume.pdf" 
+            href="/Resume_Loyd Johnson.pdf" 
             download="Loyd_Johnson_Resume.pdf"
             className={styles.btnSecondary}
           >

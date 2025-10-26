@@ -995,7 +995,7 @@ function App() {
                   <div className="flex-1">
                     <h4 className="font-semibold text-slate-200 mb-1">Resume</h4>
                     <a 
-                      href="/resume.pdf" 
+                      href="/Resume_Loyd Johnson.pdf" 
                       download="Loyd_Johnson_Resume.pdf"
                       className="text-cyan-400 hover:text-cyan-300 flex items-center gap-2"
                     >
