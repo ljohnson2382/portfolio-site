@@ -112,6 +112,23 @@ export const servicenowSkills = [
   'Multi-tier Support', 'Process Automation'
 ];
 
+// DNS & SSL Implementation Project Data
+export const dnsSSLOutcomes = [
+  'Zero-downtime domain migration with enterprise DNS management',
+  'Implemented Microsoft 365 email with full authentication (SPF/DKIM/DMARC)',
+  'Configured DNS validation for SSL certificate provisioning',
+  'Established professional brand integration across LinkedIn, GitHub, and portfolio',
+  'Created comprehensive Azure DNS and PowerShell automation framework',
+  'SSL implementation in progress: Azure auto-provisioning vs manual certificate evaluation'
+];
+
+export const dnsSSLSkills = [
+  'Azure DNS Management', 'SSL/TLS Implementation', 'Domain Migration', 
+  'Microsoft 365 Administration', 'PowerShell Automation', 'Email Security Protocols',
+  'DNS Troubleshooting', 'Certificate Management', 'Cloud Infrastructure', 
+  'Network Security', 'Systems Integration', 'Technical Documentation'
+];
+
 // Additional certifications and professional highlights
 export const professionalHighlights = [
   'ITIL 4 Foundation Certified',
@@ -124,9 +141,8 @@ export const professionalHighlights = [
 
 // Contact information
 export const contactInfo = {
-  email: 'loyd.johnson@example.com',
-  phone: '+1 (555) 123-4567',
-  location: 'Riverside, CA',
+  email: 'contact@loydjohnson.com',
+  phone: '+1 (781) 706-2313',
   linkedin: 'https://linkedin.com/in/loydjohnson',
   github: 'https://github.com/loydjohnson'
 };

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, Mail, Linkedin, ChevronDown, Award, Briefcase, Users, TrendingUp, Target, Database, Cloud, Code, Phone, Lock } from 'lucide-react';
+import { Download, Mail, Linkedin, ChevronDown, Award, Briefcase, Users, TrendingUp, Target, Database, Cloud, Code, Phone, Lock, Shield, Globe } from 'lucide-react';
 import { 
   skillsCategories, 
   aboutStats, 
@@ -7,9 +7,11 @@ import {
   velocityProjectOutcomes,
   laptopLockerOutcomes,
   servicenowOutcomes,
+  dnsSSLOutcomes,
   velocitySkills,
   laptopLockerSkills,
   servicenowSkills,
+  dnsSSLSkills,
   professionalHighlights,
   contactInfo
 } from './data/portfolio-data.js';
@@ -683,7 +685,221 @@ function App() {
               </div>
             </div>
 
-            {/* Project 6 & 7: Grid */}
+            {/* Project 6: Enterprise DNS & SSL Implementation */}
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-8 border border-slate-700 hover:border-blue-500/50 transition-all duration-300 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-blue-500/20">
+              <div className="text-blue-400 mb-4">
+                <Shield size={32} />
+              </div>
+              <h3 className="text-2xl font-semibold mb-3 text-slate-200">Enterprise DNS & SSL Implementation</h3>
+              <p className="text-slate-300 mb-6">
+                Led comprehensive domain migration and security implementation project, establishing enterprise-grade DNS management with Azure, 
+                Microsoft 365 email integration, and SSL/TLS certificate deployment strategy with zero downtime.
+              </p>
+
+              <div className="mb-6">
+                <h4 className="text-sm font-semibold text-blue-400 mb-3">Technical Architecture & Implementation</h4>
+                <div className="grid md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <h5 className="text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Phase 1: DNS Infrastructure</h5>
+                    <ul className="space-y-1 text-sm text-slate-300">
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">→</span>
+                        <span>Azure DNS Zones as authoritative nameserver</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">→</span>
+                        <span>Configured NS, MX, TXT, CNAME records</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">→</span>
+                        <span>PowerShell automation for DNS verification</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">→</span>
+                        <span>Global DNS propagation monitoring</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h5 className="text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Phase 2: Email Security</h5>
+                    <ul className="space-y-1 text-sm text-slate-300">
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">→</span>
+                        <span>Microsoft 365 Business Standard integration</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">→</span>
+                        <span>SPF, DKIM, DMARC authentication protocols</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">→</span>
+                        <span>Custom domain email (@loydjohnson.com)</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">→</span>
+                        <span>Microsoft Graph PowerShell validation</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="bg-slate-900/50 rounded-lg p-4 border border-slate-600">
+                  <h5 className="text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Phase 3: SSL/TLS Security Implementation (In Progress)</h5>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div>
+                      <p className="text-xs text-slate-500 mb-1">Certificate Management</p>
+                      <ul className="space-y-1 text-sm text-slate-300">
+                        <li className="flex gap-2">
+                          <span className="text-yellow-400">⏳</span>
+                          <span>Azure-managed SSL certificate (pending)</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="text-green-400">✓</span>
+                          <span>Dynadot certificate acquired (standby)</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="text-green-400">✓</span>
+                          <span>DNS validation records configured</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-500 mb-1">Implementation Strategy</p>
+                      <ul className="space-y-1 text-sm text-slate-300">
+                        <li className="flex gap-2">
+                          <span className="text-blue-400">→</span>
+                          <span>Prioritizing Azure auto-management</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="text-blue-400">→</span>
+                          <span>Manual certificate as fallback option</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="text-blue-400">→</span>
+                          <span>Evaluating automated renewal benefits</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-500 mb-1">Platform Integration</p>
+                      <ul className="space-y-1 text-sm text-slate-300">
+                        <li className="flex gap-2">
+                          <span className="text-green-400">✓</span>
+                          <span>LinkedIn profile integration</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="text-green-400">✓</span>
+                          <span>GitHub portfolio linking</span>
+                        </li>
+                        <li className="flex gap-2">
+                          <span className="text-green-400">✓</span>
+                          <span>Professional brand cohesion</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h4 className="text-sm font-semibold text-blue-400 mb-3">Network+ Certification Alignment & Technical Skills</h4>
+                <div className="grid md:grid-cols-2 gap-4 mb-4">
+                  <div className="bg-slate-900/30 rounded-lg p-3 border border-slate-700">
+                    <h5 className="text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">DNS & Networking Concepts</h5>
+                    <ul className="space-y-1 text-sm text-slate-300">
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">📚</span>
+                        <span>Hierarchical DNS structure and delegation</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">📚</span>
+                        <span>Record types: NS, MX, TXT, CNAME, A records</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">📚</span>
+                        <span>TTL configuration and DNS propagation</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">📚</span>
+                        <span>Ports & Protocols: DNS (53), HTTP (80), HTTPS (443)</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-slate-900/30 rounded-lg p-3 border border-slate-700">
+                    <h5 className="text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Security Implementation</h5>
+                    <ul className="space-y-1 text-sm text-slate-300">
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">🔒</span>
+                        <span>SSL/TLS encryption and certificate lifecycle</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">🔒</span>
+                        <span>Email security: SPF, DKIM, DMARC protocols</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">🔒</span>
+                        <span>Security headers and defense-in-depth</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400">🔒</span>
+                        <span>Certificate Authority validation processes</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <h4 className="text-sm font-semibold text-blue-400 mb-3">Project Outcomes & Business Impact</h4>
+                <div className="grid md:grid-cols-2 gap-3">
+                  {dnsSSLOutcomes.map((item, i) => (
+                    <div key={i} className="flex gap-2 text-sm text-slate-300">
+                      <span className="text-green-400">✓</span>
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="mb-4">
+                <h4 className="text-sm font-semibold text-blue-400 mb-3">Project Timeline & Current Status</h4>
+                <div className="bg-slate-900/30 rounded-lg p-3 border border-slate-700">
+                  <div className="grid md:grid-cols-4 gap-3 text-sm">
+                    <div>
+                      <p className="text-xs text-green-400 mb-1">✓ Completed</p>
+                      <p className="text-slate-300">Domain migration & DNS setup</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-green-400 mb-1">✓ Completed</p>
+                      <p className="text-slate-300">Email configuration & validation</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-yellow-400 mb-1">⏳ In Progress</p>
+                      <p className="text-slate-300">SSL certificate provisioning</p>
+                    </div>
+                    <div>
+                      <p className="text-xs text-slate-500 mb-1">🔄 Pending</p>
+                      <p className="text-slate-300">Final integration & testing</p>
+                    </div>
+                  </div>
+                  <div className="mt-3 pt-3 border-t border-slate-600">
+                    <p className="text-xs text-slate-400">
+                      <span className="text-blue-400">Current Focus:</span> Monitoring Azure SSL auto-provisioning vs manual Dynadot certificate implementation
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {dnsSSLSkills.map((skill, i) => (
+                  <span key={i} className="text-xs px-3 py-1 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-full text-slate-300">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Project 7 & 8: Grid */}
             <div className="grid md:grid-cols-2 gap-8">
               {/* Cross-Functional Collaboration */}
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-8 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300">
