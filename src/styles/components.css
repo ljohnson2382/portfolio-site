@@ -1,0 +1,232 @@
+/* Common Component Styles */
+
+/* Section Headers */
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.section-title-gradient {
+  background: linear-gradient(to right, rgb(34, 211, 238), rgb(196, 181, 253));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: rgb(148, 163, 184);
+  margin-bottom: 3rem;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Container */
+.section-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Cards */
+.card {
+  background-color: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+  border: 1px solid rgb(51, 65, 85);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+}
+
+.card-padding {
+  padding: 2rem;
+}
+
+.card-padding-sm {
+  padding: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, rgb(6, 182, 212), rgb(168, 85, 247));
+  color: white;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.5);
+}
+
+.btn-secondary {
+  border: 1px solid rgb(71, 85, 105);
+  color: rgb(203, 213, 225);
+}
+
+.btn-secondary:hover {
+  border-color: rgb(34, 211, 238);
+  color: rgb(34, 211, 238);
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-3 {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Text Styles */
+.text-primary {
+  color: rgb(203, 213, 225);
+}
+
+.text-secondary {
+  color: rgb(148, 163, 184);
+}
+
+.text-accent {
+  color: rgb(34, 211, 238);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, rgb(34, 211, 238), rgb(196, 181, 253));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Icon Containers */
+.icon-container {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.icon-cyan {
+  background-color: rgba(6, 182, 212, 0.1);
+  color: rgb(34, 211, 238);
+}
+
+.icon-purple {
+  background-color: rgba(168, 85, 247, 0.1);
+  color: rgb(196, 181, 253);
+}
+
+.icon-green {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: rgb(74, 222, 128);
+}
+
+/* Skill Tags */
+.skill-tag {
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(51, 65, 85, 0.5);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: rgb(203, 213, 225);
+  border: 1px solid rgb(71, 85, 105);
+}
+
+.skill-tag-gradient {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, rgba(6, 182, 212, 0.1), rgba(168, 85, 247, 0.1));
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 0.5rem;
+  color: rgb(203, 213, 225);
+  transition: border-color 0.3s ease;
+}
+
+.skill-tag-gradient:hover {
+  border-color: rgb(34, 211, 238);
+}
+
+/* Lists */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list-item {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-list-icon {
+  color: rgb(34, 211, 238);
+  margin-top: 0.125rem;
+}
+
+/* Sections */
+.section-dark {
+  background-color: rgb(2, 6, 23);
+  padding: 5rem 0;
+}
+
+.section-darker {
+  background-color: rgb(15, 23, 42);
+  padding: 5rem 0;
+}
+
+/* Image Styles */
+.image-container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 2px solid rgb(51, 65, 85);
+  transition: all 0.3s ease;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.image-container:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(15, 23, 42), rgba(15, 23, 42, 0.2), transparent);
+}
