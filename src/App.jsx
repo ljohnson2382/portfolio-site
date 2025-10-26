@@ -692,8 +692,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-slate-200">Enterprise DNS & SSL Implementation</h3>
               <p className="text-slate-300 mb-6">
-                Led comprehensive domain migration and security implementation project, establishing enterprise-grade DNS management with Azure, 
-                Microsoft 365 email integration, and SSL/TLS certificate deployment strategy with zero downtime.
+                Comprehensive infrastructure implementation demonstrating enterprise-grade DNS management with Azure, Microsoft 365 email integration, 
+                and SSL/TLS certificate deployment strategy. Self-directed technical initiative showcasing practical application of Network+ 
+                certification concepts and modern cloud infrastructure management skills.
               </p>
 
               <div className="mb-6">
