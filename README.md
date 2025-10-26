@@ -1,6 +1,6 @@
 # Professional Portfolio - Loyd Johnson
 
-> **Live Portfolio**: [https://jolly-forest-0b51b220f.3.azurestaticapps.net](https://jolly-forest-0b51b220f.3.azurestaticapps.net)
+> **Live Portfolio**: [https://www.loydjohnson.com](https://www.loydjohnson.com)
 
 A modern, enterprise-grade portfolio website demonstrating advanced React architecture, Azure cloud deployment, and professional IT expertise. This project showcases both technical development capabilities and real-world business impact through detailed project case studies.
 
@@ -208,7 +208,7 @@ While this is a personal portfolio, the architecture and deployment patterns are
 
 ## � Professional Contact
 
-- **Portfolio**: [Live Demo](https://jolly-forest-0b51b220f.3.azurestaticapps.net)
+- **Portfolio**: [www.loydjohnson.com](https://www.loydjohnson.com)
 - **Email**: [contact@loydjohnson.com](mailto:contact@loydjohnson.com)
 - **LinkedIn**: [linkedin.com/in/loydj](https://linkedin.com/in/loydj)
 - **Phone**: [781.706.2313](tel:7817062313)
