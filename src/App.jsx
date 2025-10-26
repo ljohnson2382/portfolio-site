@@ -1022,9 +1022,14 @@ function App() {
             <p className="text-slate-400 mb-2">
               © 2025 Loyd Johnson | Professional IT Portfolio
             </p>
-            <p className="text-slate-500 text-sm">
-              Beyond technology: <a href="http://photo.loydjohnson.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">photo.loydjohnson.com</a>
-            </p>
+            <div className="space-y-1">
+              <p className="text-slate-500 text-sm">
+                <a href="https://github.com/ljohnson2382/portfolio-site" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">View Source Code on GitHub</a>
+              </p>
+              <p className="text-slate-500 text-sm">
+                Beyond technology: <a href="http://photo.loydjohnson.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">photo.loydjohnson.com</a>
+              </p>
+            </div>
           </div>
         </div>
       </footer>
