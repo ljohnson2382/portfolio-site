@@ -82,7 +82,7 @@ This site is deployed using Azure Static Web Apps with GitHub Actions for CI/CD.
 
 ## 📱 Contact
 
-- **Email**: contact@northeastern.edu
+- **Email**: contact@loydjohnson.com
 - **LinkedIn**: [linkedin.com/in/loydj](https://linkedin.com/in/loydj)
 - **Portfolio**: [loydjohnson.com](https://loydjohnson.com)
 
