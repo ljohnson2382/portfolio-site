@@ -521,7 +521,7 @@ function App() {
                     <h3 className="text-2xl font-semibold text-slate-200 mb-2">Campus Device Image Refresh Initiative</h3>
                     <p className="text-slate-400 text-sm mb-2">Northeastern University • 2024 - December 2025</p>
                     <p className="text-slate-300">
-                      Partnered with colleague to lead comprehensive image refresh project for iMac and Surface Laptops, redesigning user experience and coordinating deployment across campus through cross-functional collaboration.
+                      Partnered with colleague to lead comprehensive image refresh project for Macbook Air and Surface Laptops, redesigning user experience and coordinating deployment across campus through cross-functional collaboration.
                     </p>
                   </div>
                 </div>
