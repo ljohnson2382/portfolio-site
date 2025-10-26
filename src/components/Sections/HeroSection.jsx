@@ -34,10 +34,14 @@ function HeroSection({ onScrollToSection }) {
           >
             Let's Connect
           </button>
-          <button className={styles.btnSecondary}>
+          <a 
+            href="/resume.pdf" 
+            download="Loyd_Johnson_Resume.pdf"
+            className={styles.btnSecondary}
+          >
             <Download size={20} />
             Download Resume
-          </button>
+          </a>
         </div>
 
         <div className={styles.statsGrid}>

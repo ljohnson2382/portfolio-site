@@ -994,9 +994,13 @@ function App() {
                   </div>
                   <div className="flex-1">
                     <h4 className="font-semibold text-slate-200 mb-1">Resume</h4>
-                    <button className="text-cyan-400 hover:text-cyan-300 flex items-center gap-2">
+                    <a 
+                      href="/resume.pdf" 
+                      download="Loyd_Johnson_Resume.pdf"
+                      className="text-cyan-400 hover:text-cyan-300 flex items-center gap-2"
+                    >
                       Download PDF <Download size={16} />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
