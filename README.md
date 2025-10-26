@@ -4,7 +4,7 @@
 
 A modern, enterprise-grade portfolio website demonstrating advanced React architecture, Azure cloud deployment, and professional IT expertise. This project showcases both technical development capabilities and real-world business impact through detailed project case studies.
 
-[![Azure Static Web Apps CI/CD](https://github.com/ljohnson2382/portfolio-site/actions/workflows/azure-static-web-apps.yml/badge.svg)](https://github.com/ljohnson2382/portfolio-site/actions/workflows/azure-static-web-apps.yml)
+[![Azure Static Web Apps CI/CD](https://github.com/ljohnson2382/portfolio-site/actions/workflows/azure-static-web-apps-jolly-forest-0b51b220f.yml/badge.svg)](https://github.com/ljohnson2382/portfolio-site/actions/workflows/azure-static-web-apps-jolly-forest-0b51b220f.yml)
 [![React 19](https://img.shields.io/badge/React-19.1.1-61dafb.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.1.7-646cff.svg)](https://vitejs.dev/)
 [![Azure](https://img.shields.io/badge/Azure-Static%20Web%20Apps-0078d4.svg)](https://azure.microsoft.com/en-us/services/app-service/static/)
