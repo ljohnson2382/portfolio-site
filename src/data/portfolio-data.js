@@ -116,10 +116,10 @@ export const servicenowSkills = [
 export const dnsSSLOutcomes = [
   'Zero-downtime domain migration with enterprise DNS management',
   'Implemented Microsoft 365 email with full authentication (SPF/DKIM/DMARC)',
-  'Configured DNS validation for SSL certificate provisioning',
+  'Successfully deployed Azure-managed SSL certificate with automated renewal',
   'Established professional brand integration across LinkedIn, GitHub, and portfolio',
   'Created comprehensive Azure DNS and PowerShell automation framework',
-  'SSL implementation in progress: Azure auto-provisioning vs manual certificate evaluation'
+  'Achieved complete end-to-end secure infrastructure with enterprise-grade practices'
 ];
 
 export const dnsSSLSkills = [
