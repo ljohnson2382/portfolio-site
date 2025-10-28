@@ -6,7 +6,7 @@ export const heroStyles = {
   gradient1: "absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900",
   gradient2: "absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent",
   content: "relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center",
-  title: "text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent",
+  title: "text-5xl md:text-7xl font-bold mb-6 text-white",
   subtitle: "text-xl md:text-2xl text-slate-300 mb-4",
   description: "text-lg text-slate-400 max-w-3xl mx-auto mb-8",
   buttons: "flex flex-col sm:flex-row gap-4 justify-center mb-12",
