@@ -47,7 +47,6 @@ function App() {
   const styles = commonStyles;
 
   // Load Credly script for credential badge functionality
-  // Load Credly script for credential badge functionality
   useEffect(() => {
     const script = document.createElement('script');
     script.src = '//cdn.credly.com/assets/utilities/embed.js';
@@ -429,33 +428,35 @@ function App() {
                     <Lock size={32} className="text-blue-400" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold text-slate-200 mb-2">Velocity Smart Locker Laptop Program</h3>
-                    <p className="text-slate-400 text-sm mb-2">Northeastern University • 2021 - December 2025</p>
+                    <h3 className="text-2xl font-semibold text-slate-200 mb-2">Velocity Smart Locker Laptop Program Enhancement</h3>
+                    <p className="text-slate-400 text-sm mb-2">Northeastern University • 2023 - December 2025</p>
                     <p className="text-slate-300">
-                      Led comprehensive management of 200+ laptop lending program through Velocity Smart Locker system, providing critical technology access to Faculty, Staff, and Students across campus.
+                      Led comprehensive service enhancement and optimization of 200+ laptop lending program through Velocity Smart Locker system, 
+                      transforming technology access delivery for Faculty, Staff, and Students across campus through improved processes, 
+                      training programs, and operational excellence initiatives.
                     </p>
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
-                    <h4 className="text-sm font-semibold text-blue-400 mb-3">Technical Management</h4>
+                    <h4 className="text-sm font-semibold text-blue-400 mb-3">Service Enhancement & Optimization</h4>
                     <ul className="space-y-2 text-sm text-slate-300">
                       <li className="flex gap-2">
                         <span className="text-blue-400 mt-0.5">•</span>
-                        <span>Managed 200+ laptops in active lending rotation</span>
+                        <span>Optimized 200+ laptop lifecycle management and rotation processes</span>
                       </li>
                       <li className="flex gap-2">
                         <span className="text-blue-400 mt-0.5">•</span>
-                        <span>Troubleshot software and hardware issues</span>
+                        <span>Enhanced troubleshooting protocols for faster issue resolution</span>
                       </li>
                       <li className="flex gap-2">
                         <span className="text-blue-400 mt-0.5">•</span>
-                        <span>Coordinated manufacturer warranty repairs</span>
+                        <span>Streamlined manufacturer warranty repair coordination</span>
                       </li>
                       <li className="flex gap-2">
                         <span className="text-blue-400 mt-0.5">•</span>
-                        <span>Collaborated with Velocity vendor on locker support</span>
+                        <span>Improved vendor collaboration and support escalation procedures</span>
                       </li>
                     </ul>
                   </div>
@@ -484,15 +485,15 @@ function App() {
                 </div>
 
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-blue-400 mb-3">Program Impact</h4>
+                  <h4 className="text-sm font-semibold text-blue-400 mb-3">Service Enhancement Impact</h4>
                   <div className="grid md:grid-cols-2 gap-3">
                     {[
-                      'Ensured continuous technology access for campus community',
-                      'Maintained high service availability through proactive management',
-                      'Reduced equipment downtime through efficient repair coordination',
-                      'Enhanced user experience through reliable locker operations',
-                      'Created sustainable laptop lending infrastructure',
-                      'Established vendor relationship management framework'
+                      'Transformed technology access delivery for campus community',
+                      'Improved service availability through proactive enhancement initiatives',
+                      'Reduced equipment downtime via optimized repair coordination processes',
+                      'Enhanced user experience through systematic service improvements',
+                      'Established sustainable laptop lending infrastructure framework',
+                      'Developed comprehensive vendor relationship management protocols'
                     ].map((item, i) => (
                       <div key={i} className="flex gap-2 text-sm text-slate-300">
                         <span className="text-green-400">✓</span>
