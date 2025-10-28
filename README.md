@@ -55,11 +55,35 @@ src/styles/constants/     # Organized style management
 └── commonStyles.js      # Shared style constants
 ```
 
-### **Data Architecture**
+### **Three-Layer Architecture Pattern**
+The codebase uses a clean separation of concerns across three layers:
+
 ```
 src/data/
-└── portfolio-data.js     # Centralized content management
-                         # Skills, experience, projects, credentials
+└── portfolio-data.js     # Content Layer - All text, skills, project data
+
+src/styles/constants/     # Style Layer - Tailwind class combinations as JS objects
+├── navigationStyles.js  # Navigation-specific styling
+├── heroStyles.js        # Hero section styling  
+├── aboutStyles.js       # About section styling
+└── commonStyles.js      # Shared styling constants
+
+src/components/          # Component Layer - Structure and logic
+├── Navigation/          # Imports navigationStyles + data
+├── Sections/           # Imports section-specific styles + data
+└── Common/             # Imports commonStyles
+```
+
+**Making Changes:**
+- **Content updates**: Edit `src/data/portfolio-data.js`
+- **Style changes**: Edit `src/styles/constants/*Styles.js` files
+- **Structure changes**: Edit component `.jsx` files
+- **New sections**: Add data → create styles → build component → import to App.jsx
+
+### **Utility Functions**
+```
+src/utils/
+└── helpers.js           # Scroll handling, viewport detection, debouncing
 ```
 
 ## 🚀 Modern Tech Stack
