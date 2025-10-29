@@ -1055,7 +1055,7 @@ function App() {
                     <div className="w-24 h-2 bg-slate-700 rounded-full overflow-hidden mt-2">
                       <div className="w-1/2 h-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
                     </div>
-                    <span className="text-xs text-slate-400 mt-1">50% Complete</span>
+                    <span className="text-xs text-slate-400 mt-1">60% Complete</span>
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold text-slate-200 text-center mb-2">CompTIA Network+</h4>
