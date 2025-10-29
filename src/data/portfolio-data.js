@@ -25,7 +25,7 @@ export const skillsCategories = [
   {
     iconName: 'Code',
     title: 'Development & Tools',
-    skills: ['SQL', 'Python', 'HTML/CSS', 'PowerShell', 'Git']
+    skills: ['SQL', 'Python', 'HTML/CSS', 'PowerShell', 'Git', 'Markdown', 'Technical Documentation', 'GitHub Issues']
   }
 ];
 
@@ -40,27 +40,39 @@ export const aboutStats = [
 // Experience data
 export const experienceData = [
   {
-    title: 'IT Manager',
-    company: 'Riverside Community College District',
-    period: '2022 - Present',
-    description: 'Leading technology initiatives and system management across the district.',
+    title: 'IT Client Support Specialist',
+    company: 'Northeastern University',
+    period: 'April 2022 - Present',
+    description: 'Serve as primary technology liaison for 38,000+ students, 3,000+ faculty, and 4,000+ staff across 13 global campus locations.',
     achievements: [
-      'Implemented comprehensive device management strategies',
-      'Led cross-functional technology projects',
-      'Optimized IT service delivery processes',
-      'Established vendor management protocols'
+      'Designed and implemented comprehensive analytics dashboard that increased team workflow efficiency',
+      'Recognized by management for "tremendous job in collaborating" across departments and initiatives',
+      'Mentor junior analysts on technical procedures and customer service excellence',
+      'Developed expertise in equipment and asset management across multiple campus locations'
     ]
   },
   {
-    title: 'IT Technician',
-    company: 'Riverside Community College District',
-    period: '2019 - 2022',
-    description: 'Provided technical support and system administration services.',
+    title: 'Operations Manager',
+    company: 'Elite Delivery Services',
+    period: 'March 2017 - 2022',
+    description: 'Managed daily operations for 30-driver fleet with focus on performance optimization and customer satisfaction.',
     achievements: [
-      'Maintained 98% system uptime across critical infrastructure',
-      'Resolved 1000+ technical support tickets',
-      'Implemented automated deployment solutions',
-      'Trained staff on new technology platforms'
+      'Improved on-time delivery rate by 18% through data-driven route optimization',
+      'Reduced operational costs by 12% through strategic process improvements',
+      'Decreased employee turnover by 25% through workforce development initiatives',
+      'Increased customer satisfaction scores by 20% through enhanced communication protocols'
+    ]
+  },
+  {
+    title: 'Assistant Recording Engineer',
+    company: 'Q Division',
+    period: 'May 2014 - 2017',
+    description: 'Provided technical leadership during complex studio sessions and project coordination.',
+    achievements: [
+      'Served as technical lead during complex studio sessions',
+      'Coordinated between lead engineers, artists, and support staff for seamless project delivery',
+      'Managed pre-session planning including resource allocation and technical setup',
+      'Maintained high-quality standards for professional audio production'
     ]
   }
 ];
