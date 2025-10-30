@@ -916,10 +916,10 @@ function App() {
                     <h3 className="text-2xl font-semibold text-slate-200 mb-2">Multi-Platform Homelab Infrastructure</h3>
                     <p className="text-slate-400 text-sm mb-2">Self-Directed Learning Environment • October 2025 - Present</p>
                     <p className="text-slate-300 mb-4">
-                      <strong>Self-Directed Technical Lab:</strong> Built a comprehensive virtualized environment for hands-on learning across Linux administration, Windows Server management, and cybersecurity testing. Implemented security hardening practices including SSH key authentication, port management, and network access controls.
+                      <strong>Self-Directed Technical Lab:</strong> Built a comprehensive virtualized environment for hands-on learning across Linux administration, Windows Server management, and cybersecurity testing. Implemented security hardening practices including SSH key authentication, port management, and network access controls. Initially set up Apache web server for potential portfolio self-hosting, then strategically chose enterprise cloud deployment (Azure Static Web Apps) to gain DevOps experience.
                     </p>
                     <p className="text-slate-300">
-                      This project reflects my commitment to understanding enterprise technologies beyond my current support role, gaining practical experience with security best practices and multi-platform system administration.
+                      This project reflects my commitment to understanding enterprise technologies beyond my current support role, gaining practical experience with security best practices, multi-platform system administration, and strategic technology decision-making.
                     </p>
                   </div>
                 </div>
@@ -934,7 +934,7 @@ function App() {
                       <strong className="text-emerald-300">System Hardening:</strong> Automatic security updates configured, sudo-only administration (root access disabled), minimal service footprint with only MariaDB running
                     </div>
                     <div>
-                      <strong className="text-emerald-300">Linux Administration:</strong> Ubuntu server management, MariaDB installation and configuration, secure file transfers via SCP, and command-line proficiency
+                      <strong className="text-emerald-300">Linux Administration:</strong> Ubuntu server management, Apache web server installation and configuration (initially for portfolio self-hosting consideration), MariaDB installation and configuration, secure file transfers via SCP, and command-line proficiency
                     </div>
                     <div>
                       <strong className="text-emerald-300">Windows Server 2025:</strong> Latest enterprise server platform for Active Directory testing, group policy management, and modern Windows server administration
