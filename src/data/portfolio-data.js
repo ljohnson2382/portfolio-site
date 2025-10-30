@@ -15,17 +15,22 @@ export const skillsCategories = [
   {
     iconName: 'Database',
     title: 'Systems & Platforms',
-    skills: ['Active Directory', 'Microsoft Azure', 'Microsoft Intune', 'Jamf', 'ServiceNow']
+    skills: ['Active Directory', 'Microsoft Azure', 'Microsoft Intune', 'Jamf', 'ServiceNow', 'Linux', 'Virtualization']
   },
   {
     iconName: 'Cloud',
     title: 'Service Management',
-    skills: ['ServiceNow', 'Microsoft Project', 'Asana', 'ITIL 4', 'Process Optimization']
+    skills: ['ServiceNow', 'Microsoft Project', 'Asana', 'Process Optimization']
   },
   {
     iconName: 'Code',
     title: 'Development & Tools',
-    skills: ['SQL', 'Python', 'HTML/CSS', 'PowerShell', 'Git', 'Markdown', 'Technical Documentation', 'GitHub Issues']
+    skills: ['SQL', 'Python', 'JavaScript', 'HTML/CSS', 'PowerShell', 'Git', 'Markdown', 'Technical Documentation', 'GitHub Issues']
+  },
+  {
+    iconName: 'Palette',
+    title: 'Design & Communication',
+    skills: ['Figma', 'Draw.io', 'Adobe XD', 'Technical Writing']
   }
 ];
 

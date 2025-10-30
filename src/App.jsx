@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, Mail, Linkedin, ChevronDown, Award, Briefcase, Users, TrendingUp, Target, Database, Cloud, Code, Phone, Lock, Shield, Globe } from 'lucide-react';
+import { Download, Mail, Linkedin, ChevronDown, Award, Briefcase, Users, TrendingUp, Target, Database, Cloud, Code, Phone, Lock, Shield, Globe, Network } from 'lucide-react';
 import { 
   skillsCategories, 
   aboutStats, 
@@ -901,7 +901,96 @@ function App() {
               </div>
             </div>
 
-            {/* Project 7 & 8: Grid */}
+            {/* Project 7: Multi-Platform Homelab Infrastructure */}
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 overflow-hidden">
+              <div className="p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="p-3 bg-gradient-to-br from-emerald-500/20 to-blue-500/20 rounded-lg">
+                    <Network size={32} className="text-emerald-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-slate-200 mb-2">Multi-Platform Homelab Infrastructure</h3>
+                    <p className="text-slate-400 text-sm mb-2">Self-Directed Learning Environment • October 2025 - Present</p>
+                    <p className="text-slate-300 mb-4">
+                      <strong>Self-Directed Technical Lab:</strong> Built a comprehensive virtualized environment for hands-on learning across Linux administration, Windows Server management, and cybersecurity testing. Implemented security hardening practices including SSH key authentication, port management, and network access controls.
+                    </p>
+                    <p className="text-slate-300">
+                      This project reflects my commitment to understanding enterprise technologies beyond my current support role, gaining practical experience with security best practices and multi-platform system administration.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mb-6 p-4 bg-gradient-to-r from-emerald-500/10 to-blue-500/10 border border-emerald-500/30 rounded-lg">
+                  <h4 className="text-sm font-semibold text-emerald-400 mb-3">🎯 Infrastructure Architecture & Capabilities</h4>
+                  <div className="space-y-3 text-sm text-slate-300">
+                    <div>
+                      <strong className="text-emerald-300">Linux Server Security:</strong> SSH key-based authentication with password authentication disabled, root login disabled, custom SSH port configuration, firewall hardening with only ports 80, 443, and custom SSH port open
+                    </div>
+                    <div>
+                      <strong className="text-emerald-300">System Hardening:</strong> Automatic security updates configured, sudo-only administration (root access disabled), minimal service footprint with only MariaDB running
+                    </div>
+                    <div>
+                      <strong className="text-emerald-300">Linux Administration:</strong> Ubuntu server management, MariaDB installation and configuration, secure file transfers via SCP, and command-line proficiency
+                    </div>
+                    <div>
+                      <strong className="text-emerald-300">Windows Server 2025:</strong> Latest enterprise server platform for Active Directory testing, group policy management, and modern Windows server administration
+                    </div>
+                    <div>
+                      <strong className="text-emerald-300">Cybersecurity Lab:</strong> Kali Linux penetration testing environment for security assessment skill development and vulnerability analysis
+                    </div>
+                    <div>
+                      <strong className="text-emerald-300">Network Infrastructure:</strong> Static IP addressing, secure remote access protocols, and cross-platform connectivity for seamless administration
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="text-sm font-semibold text-emerald-400 mb-3">Technical Outcomes</h4>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {[
+                      'Implemented comprehensive SSH hardening (key-only auth, root disabled, custom port)',
+                      'Configured automatic security updates and sudo-only administration',
+                      'Established minimal attack surface with only essential services (MariaDB)',
+                      'Applied enterprise-grade firewall rules and network security controls',
+                      'Created secure cybersecurity testing and learning environment',
+                      'Developed production-level Linux security administration skills'
+                    ].map((outcome, i) => (
+                      <div key={i} className="flex gap-2 text-sm text-slate-300">
+                        <span className="text-emerald-400 mt-0.5">✓</span>
+                        <span>{outcome}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mb-6 p-4 bg-slate-700/30 rounded-lg">
+                  <h4 className="text-sm font-semibold text-emerald-400 mb-3">Professional Development Focus</h4>
+                  <p className="text-sm text-slate-300 mb-3">
+                    This homelab represents my commitment to understanding enterprise technologies beyond my current support role. By gaining hands-on experience with security hardening, server administration, and multi-platform environments, I'm building practical knowledge that enhances my ability to troubleshoot and support complex IT infrastructure.
+                  </p>
+                  <div className="text-sm text-slate-300">
+                    <strong className="text-emerald-300">Learning Objective:</strong> Develop comprehensive technical understanding that allows me to provide better support and grow into more advanced IT roles with confidence and competency.
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-sm font-semibold text-emerald-400 mb-3">Key Technologies & Skills</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      'Linux Security Hardening', 'SSH Key Authentication', 'Root Access Control', 'Firewall Configuration', 
+                      'Automatic Updates', 'Service Minimization', 'Sudo Administration', 'Custom Port Management',
+                      'Windows Server 2025', 'VirtualBox', 'Network Security', 'MariaDB Administration'
+                    ].map((skill, i) => (
+                      <span key={i} className="text-xs px-2 py-1 bg-slate-700/50 rounded text-slate-400 border border-slate-600">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 8 & 9: Grid */}
             <div className="grid md:grid-cols-2 gap-8">
               {/* Cross-Functional Collaboration */}
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-8 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300">
@@ -1053,7 +1142,7 @@ function App() {
                   <div className="w-36 h-36 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border-2 border-cyan-500/50 flex flex-col items-center justify-center">
                     <span className="text-5xl mb-2">🔒</span>
                     <div className="w-24 h-2 bg-slate-700 rounded-full overflow-hidden mt-2">
-                      <div className="w-1/2 h-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+                      <div className="w-[61%] h-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
                     </div>
                     <span className="text-xs text-slate-400 mt-1">61% Complete</span>
                   </div>
