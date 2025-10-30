@@ -25,7 +25,7 @@ export const skillsCategories = [
   {
     iconName: 'Code',
     title: 'Development & Tools',
-    skills: ['SQL', 'Python', 'JavaScript', 'HTML/CSS', 'PowerShell', 'Git', 'Markdown', 'Technical Documentation', 'GitHub Issues']
+    skills: ['SQL', 'Python', 'JavaScript', 'HTML/CSS', 'PowerShell', 'Git', 'ESLint', 'Prettier', 'Markdown', 'Technical Documentation', 'GitHub Issues']
   },
   {
     iconName: 'Palette',
