@@ -128,30 +128,10 @@ function LearningPhilosophySection() {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-8 border border-blue-500/20">
             <h3 className="text-2xl font-bold text-white mb-4">Strategic Professional Development</h3>
-            <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
+            <p className="text-slate-300 max-w-2xl mx-auto">
               This approach transforms personal projects into enterprise skill development laboratories, 
               preparing for real-world team environments where these practices are critical for success.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://github.com/ljohnson2382/enterprise-learning-framework"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-300 font-medium"
-              >
-                <GitBranch className="mr-2" size={18} />
-                View Learning Framework
-              </a>
-              <a 
-                href="https://github.com/ljohnson2382/homelab-enterprise-simulation"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors duration-300 font-medium"
-              >
-                <BookOpen className="mr-2" size={18} />
-                View Homelab Documentation
-              </a>
-            </div>
           </div>
         </div>
       </div>
