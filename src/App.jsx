@@ -148,7 +148,7 @@ function App() {
           {/* Background Image */}
           <div className="absolute inset-0 opacity-5">
             <img 
-              src="/images/ai-chip.jpg" 
+              src="/images/keyboard-alerts.jpg" 
               alt="" 
               className="w-full h-full object-cover"
             />
@@ -1065,8 +1065,18 @@ function App() {
       </section>
 
       {/* Credentials Section */}
-      <section id="credentials" className="py-20 bg-slate-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="credentials" className="py-20 bg-slate-900 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 opacity-5">
+          <img 
+            src="/images/ai-chip.jpg" 
+            alt="" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold mb-4 text-center">
             <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
               Education & Professional Credentials
@@ -1101,12 +1111,12 @@ function App() {
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-cyan-500/50 hover:border-cyan-400 transition-all duration-300 shadow-lg shadow-slate-900/50 hover:shadow-xl hover:shadow-cyan-500/20">
                 <div className="flex justify-center mb-4">
                   <div className="relative">
-                    {/* Border frame - centered around badge */}
-                    <div className="absolute border-2 border-cyan-500/50 rounded-lg z-10 pointer-events-none" style={{width: '152px', height: '272px', top: '-1px', left: '-1px'}}></div>
-                    {/* Mid-tone background for badge contrast */}
-                    <div className="absolute inset-0 bg-slate-400 rounded-lg -z-10" style={{width: '150px', height: '270px'}}></div>
-                    {/* Credly badge */}
-                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="c1275d91-7873-4ee1-88e2-7026e2ab6229" data-share-badge-host="https://www.credly.com"></div>
+                    {/* Credly badge - highest priority */}
+                    <div className="relative z-20" data-iframe-width="150" data-iframe-height="270" data-share-badge-id="c1275d91-7873-4ee1-88e2-7026e2ab6229" data-share-badge-host="https://www.credly.com"></div>
+                    {/* Mid-tone background for badge contrast - behind badge */}
+                    <div className="absolute inset-0 bg-slate-400 rounded-lg -z-10" style={{width: '150px', height: '270px', top: '0px', left: '0px'}}></div>
+                    {/* Border frame - on top */}
+                    <div className="absolute border-2 border-cyan-500/50 rounded-lg z-30 pointer-events-none" style={{width: '152px', height: '272px', top: '-1px', left: '-1px'}}></div>
                     <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                   </div>
                 </div>
