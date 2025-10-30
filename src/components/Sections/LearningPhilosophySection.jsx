@@ -62,13 +62,13 @@ function LearningPhilosophySection() {
         {/* Philosophy Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {philosophyItems.map((item, index) => (
-            <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-blue-500/30 transition-all duration-300 group">
+            <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center text-white">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  <h3 className="text-xl font-semibold text-white mb-3">
                     {item.title}
                   </h3>
                   <p className="text-slate-300 leading-relaxed">
@@ -90,20 +90,20 @@ function LearningPhilosophySection() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {learningProjects.map((project, index) => (
-            <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-blue-500/30 transition-all duration-300 group">
+            <a 
+              key={index}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-blue-500/30 transition-all duration-300 group block"
+            >
               <div className="flex items-start justify-between mb-4">
                 <h4 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h4>
-                <a 
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 w-8 h-8 bg-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-blue-400 hover:bg-slate-600 transition-all duration-300"
-                  aria-label={`View ${project.title} on GitHub`}
-                >
+                <div className="flex-shrink-0 w-8 h-8 bg-slate-700 rounded-lg flex items-center justify-center text-slate-400 group-hover:text-blue-400 group-hover:bg-slate-600 transition-all duration-300">
                   <ExternalLink size={16} />
-                </a>
+                </div>
               </div>
               
               <p className="text-slate-300 mb-6 leading-relaxed">
@@ -120,7 +120,7 @@ function LearningPhilosophySection() {
                   </span>
                 ))}
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
