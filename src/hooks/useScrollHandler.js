@@ -10,7 +10,7 @@ export function useScrollHandler() {
       setScrolled(window.scrollY > 50);
       setShowHomeButton(window.scrollY > 500);
       
-      const sections = ['home', 'about', 'experience', 'skills', 'projects', 'credentials', 'contact'];
+      const sections = ['home', 'about', 'learning-philosophy', 'experience', 'skills', 'projects', 'credentials', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
