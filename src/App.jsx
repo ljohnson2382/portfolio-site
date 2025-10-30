@@ -924,7 +924,7 @@ function App() {
                   <h4 className="text-sm font-semibold text-emerald-400 mb-3">🎯 Infrastructure Architecture & Capabilities</h4>
                   <div className="space-y-3 text-sm text-slate-300">
                     <div>
-                      <strong className="text-emerald-300">Linux Server Security:</strong> SSH key-based authentication with password authentication disabled, root login disabled, custom SSH port configuration, firewall hardening with only ports 80, 443, and custom SSH port open
+                      <strong className="text-emerald-300">Linux Server Security:</strong> SSH key-based authentication with password authentication disabled, root login disabled, custom SSH port configuration, firewall hardening with only ports 80, 443, and custom SSH port open, ICMP ping disabled for stealth operation
                     </div>
                     <div>
                       <strong className="text-emerald-300">System Hardening:</strong> Automatic security updates configured, sudo-only administration (root access disabled), minimal service footprint with only MariaDB running
@@ -951,7 +951,7 @@ function App() {
                       'Implemented comprehensive SSH hardening (key-only auth, root disabled, custom port)',
                       'Configured automatic security updates and sudo-only administration',
                       'Established minimal attack surface with only essential services (MariaDB)',
-                      'Applied enterprise-grade firewall rules and network security controls',
+                      'Applied enterprise-grade firewall rules and network stealth configuration',
                       'Created secure cybersecurity testing and learning environment',
                       'Developed production-level Linux security administration skills'
                     ].map((outcome, i) => (
