@@ -23,6 +23,7 @@ import { commonStyles } from './styles/constants/commonStyles.js';
 import Navigation from './components/Navigation/Navigation.jsx';
 import HeroSection from './components/Sections/HeroSection.jsx';
 import AboutSection from './components/Sections/AboutSection.jsx';
+import LearningPhilosophySection from './components/Sections/LearningPhilosophySection.jsx';
 import FloatingHomeButton from './components/Common/FloatingHomeButton.jsx';
 
 function App() {
@@ -74,6 +75,9 @@ function App() {
 
       {/* About Section */}
       <AboutSection />
+
+      {/* Learning Philosophy Section */}
+      <LearningPhilosophySection />
 
       {/* Experience Section */}
       <section id="experience" className="py-20 bg-slate-950">

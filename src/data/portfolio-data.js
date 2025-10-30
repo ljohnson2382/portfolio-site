@@ -3,6 +3,7 @@
 // Navigation items
 export const navItems = [
   { id: 'about', label: 'About' },
+  { id: 'learning-philosophy', label: 'Learning Philosophy' },
   { id: 'experience', label: 'Experience' },
   { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
