@@ -248,7 +248,7 @@ function App() {
                       <strong className="text-cyan-300">Route-Based Printer Support:</strong> Geographic ticket routing by campus printer locations, with shift transition capabilities for continuous coverage
                     </div>
                     <div>
-                      <strong className="text-purple-300">Cross-Platform Integration:</strong> Unified with Velocity Click & Collect application for automated restocking workflows and comprehensive audit trails
+                      <strong className="text-purple-300">Unified Workflow Visibility:</strong> Designed a centralized dashboard aligned with Velocity Click & Collect's automated data feed, enabling staff to track loan records across all stages — from checkout to return. Replaced fragmented queries with real-time reporting, reducing missed steps and preventing asset loss through clear, actionable insights.
                     </div>
                   </div>
                 </div>
