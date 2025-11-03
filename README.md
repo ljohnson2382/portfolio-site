@@ -307,6 +307,41 @@ While this is a personal portfolio, the architecture and deployment patterns are
 - **Performance Monitoring** - Application Insights integration
 - **ProjectsSection Component** - Complete the final component extraction
 - **A/B Testing** - Feature flag implementation for continuous improvement
+- ✅ **Photo Portfolio Subdomain** - React-based coming soon page for photo.loydjohnson.com
+
+## 📸 Photo Portfolio Subdomain
+
+The project now includes a dedicated React component for the photo portfolio coming soon page:
+
+### **Development Commands:**
+```bash
+# Main portfolio development
+npm run dev                 # Main portfolio on localhost:5173
+
+# Photo portfolio development  
+npm run dev:photo          # Photo page on localhost:5174
+npm run preview:photo      # Preview photo build
+
+# Production builds
+npm run build              # Builds both main and photo pages
+```
+
+### **File Structure:**
+```
+src/
+├── components/
+│   └── Pages/
+│       └── PhotoComingSoon.jsx    # Photo coming soon component
+├── PhotoApp.jsx                   # Photo app entry point
+├── photo-main.jsx                 # Photo page main entry
+└── ...
+photo.html                         # Photo page HTML template
+```
+
+### **Deployment:**
+- **Main Portfolio**: `index.html` → www.loydjohnson.com
+- **Photo Portfolio**: `photo.html` → photo.loydjohnson.com
+- Both pages share the same React codebase and design system
 
 ## 🎊 Recent Achievements
 
