@@ -1156,9 +1156,9 @@ function App() {
                   <div className="w-36 h-36 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border-2 border-cyan-500/50 flex flex-col items-center justify-center">
                     <span className="text-5xl mb-2">🔒</span>
                     <div className="w-24 h-2 bg-slate-700 rounded-full overflow-hidden mt-2">
-                      <div className="w-[61%] h-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+                      <div className="w-[80%] h-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
                     </div>
-                    <span className="text-xs text-slate-400 mt-1">61% Complete</span>
+                    <span className="text-xs text-slate-400 mt-1">80% Complete</span>
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold text-slate-200 text-center mb-2">CompTIA Network+</h4>
@@ -1348,7 +1348,7 @@ function App() {
                 <a href="https://github.com/ljohnson2382/portfolio-site" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">View Source Code on GitHub</a>
               </p>
               <p className="text-slate-500 text-sm">
-                Beyond technology: <a href="http://photo.loydjohnson.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">photo.loydjohnson.com</a>
+                Beyond technology: <a href="./photo.html" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">photo.loydjohnson.com</a>
               </p>
             </div>
           </div>

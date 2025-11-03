@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:photo": "vite --port 5174",
     "build": "vite build",
+    "build:photo": "vite build --mode photo",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:photo": "vite preview --port 4175"
   },
   "dependencies": {
     "lucide-react": "^0.548.0",
