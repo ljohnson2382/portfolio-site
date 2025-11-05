@@ -12,11 +12,17 @@ function AboutSection() {
   return (
     <section id="about" className={styles.section}>
       <div className={styles.container}>
+
         <h2 className={styles.title}>
           <span className={styles.titleGradient}>
             About Me
           </span>
         </h2>
+        <div className="text-center mb-8">
+          <span className="block text-xl md:text-2xl font-semibold text-white italic">
+            Where Systems Thinking Meets Service — On a Path from Technician to Transformational Leader.
+          </span>
+        </div>
 
         <div className={styles.grid}>
           {/* Decorative Image with Headshot Overlay */}
