@@ -15,12 +15,18 @@ function Navigation({ scrolled, activeSection, onScrollToSection }) {
     <nav className={`${styles.base} ${scrolled ? styles.scrolled : styles.transparent}`}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <button 
-            onClick={() => handleScrollToSection('home')}
-            className={styles.logo}
-          >
-            LJ
-          </button>
+            <button 
+              onClick={() => handleScrollToSection('home')}
+              className={styles.logo}
+              style={{ padding: 0, background: 'none', border: 'none' }}
+              aria-label="Home"
+            >
+              <img 
+                src="/images/logo.loydjohnson.png" 
+                alt="Loyd Johnson Logo" 
+                style={{ height: '4rem', width: 'auto', maxWidth: '4rem', objectFit: 'contain', display: 'block' }} 
+              />
+            </button>
           
           {/* Desktop Navigation */}
           <div className={styles.desktop}>
