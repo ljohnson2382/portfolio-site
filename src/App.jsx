@@ -1156,9 +1156,9 @@ function App() {
                   <div className="w-36 h-36 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border-2 border-cyan-500/50 flex flex-col items-center justify-center">
                     <span className="text-5xl mb-2">🔒</span>
                     <div className="w-24 h-2 bg-slate-700 rounded-full overflow-hidden mt-2">
-                      <div className="w-[80%] h-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
+                      <div className="w-[100%] h-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
                     </div>
-                    <span className="text-xs text-slate-400 mt-1">80% Complete</span>
+                    <span className="text-xs text-slate-400 mt-1">100% Complete</span>
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold text-slate-200 text-center mb-2">CompTIA Network+</h4>
