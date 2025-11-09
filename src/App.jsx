@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Download, Mail, Linkedin, ChevronDown, Award, Briefcase, Users, TrendingUp, Target, Database, Cloud, Code, Phone, Lock, Shield, Globe, Network } from 'lucide-react';
+import { Download, Mail, Linkedin, ChevronDown, Award, Briefcase, Users, TrendingUp, Target, Database, Cloud, Code, Phone, Lock, Shield, Globe, Network, Settings, Github } from 'lucide-react';
 import { 
   skillsCategories, 
   aboutStats, 
@@ -8,10 +8,12 @@ import {
   laptopLockerOutcomes,
   servicenowOutcomes,
   dnsSSLOutcomes,
+  systemScriptsOutcomes,
   velocitySkills,
   laptopLockerSkills,
   servicenowSkills,
   dnsSSLSkills,
+  systemScriptsSkills,
   professionalHighlights,
   contactInfo
 } from './data/portfolio-data.js';
@@ -977,6 +979,23 @@ function App() {
                   </div>
                 </div>
 
+                <div className="mb-6 p-4 bg-slate-700/30 rounded-lg">
+                  <h4 className="text-sm font-semibold text-emerald-400 mb-3">Learning Documentation</h4>
+                  <p className="text-sm text-slate-300 mb-4">
+                    Comprehensive documentation of enterprise infrastructure setup, security hardening procedures, and learning outcomes. 
+                    This repository demonstrates systematic approach to technical skill development and professional knowledge transfer.
+                  </p>
+                  <a 
+                    href="https://github.com/ljohnson2382/homelab-enterprise-simulation" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/25"
+                  >
+                    <Github size={18} />
+                    See Documentation
+                  </a>
+                </div>
+
                 <div>
                   <h4 className="text-sm font-semibold text-emerald-400 mb-3">Key Technologies & Skills</h4>
                   <div className="flex flex-wrap gap-2">
@@ -994,7 +1013,135 @@ function App() {
               </div>
             </div>
 
-            {/* Project 8 & 9: Grid */}
+            {/* Project 8: System Scripts Automation Toolkit */}
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 overflow-hidden">
+              <div className="p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="p-3 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-lg">
+                    <Settings size={32} className="text-blue-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-slate-200 mb-2">System Scripts - Cross-Platform Automation Toolkit</h3>
+                    <p className="text-slate-400 text-sm mb-2">Self-Initiated Development Project • November 2025 - Present</p>
+                    <p className="text-slate-300 mb-4">
+                      <strong>Professional Automation Framework:</strong> Comprehensive Python-based toolkit for cross-platform system administration, 
+                      featuring automated updates, health monitoring, and help desk troubleshooting tools across Linux, macOS, and Windows environments. 
+                      Built with enterprise-grade practices including modular design, comprehensive logging, and professional documentation.
+                    </p>
+                    <p className="text-slate-300">
+                      This project demonstrates practical system administration skills and professional development approach, creating production-ready 
+                      automation tools that would be valuable in enterprise IT environments.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mb-6 p-4 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-lg">
+                  <h4 className="text-sm font-semibold text-blue-400 mb-3">🎯 Core Automation & Help Desk Integration</h4>
+                  <div className="space-y-3 text-sm text-slate-300">
+                    <div>
+                      <strong className="text-blue-300">Cross-Platform Support:</strong> Intelligent OS detection with tailored update scripts for Debian/Ubuntu, Arch Linux, Fedora/RHEL, macOS, and Windows with comprehensive package manager integration
+                    </div>
+                    <div>
+                      <strong className="text-blue-300">Help Desk Diagnostics:</strong> Network troubleshooting toolkit, system information gathering, performance analysis, and Windows-specific PowerShell utilities for IT support workflows
+                    </div>
+                    <div>
+                      <strong className="text-blue-300">Enterprise Standards:</strong> JSON-based configuration management, robust logging framework, safety-first automation with health checks, and professional SOPs for systematic troubleshooting
+                    </div>
+                    <div>
+                      <strong className="text-blue-300">Modular Architecture:</strong> Clean Python modules with comprehensive error handling, virtual environment deployment, and both interactive and automated execution modes
+                    </div>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h4 className="text-sm font-semibold text-blue-400 mb-3">Automation Framework</h4>
+                    <ul className="space-y-2 text-sm text-slate-300">
+                      <li className="flex gap-2">
+                        <span className="text-blue-400 mt-0.5">•</span>
+                        <span>Automatic OS detection and appropriate script routing</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400 mt-0.5">•</span>
+                        <span>Pre/post health checks with configurable abort conditions</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400 mt-0.5">•</span>
+                        <span>Multiple configuration presets (security, conservative, aggressive)</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-blue-400 mt-0.5">•</span>
+                        <span>Comprehensive logging with file and console output</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="text-sm font-semibold text-blue-400 mb-3">Help Desk Tools</h4>
+                    <ul className="space-y-2 text-sm text-slate-300">
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>Network diagnostics with connectivity and DNS testing</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>System information gathering and hardware inventory</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>Performance analysis with bottleneck identification</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>Windows PowerShell utilities and batch maintenance</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="text-sm font-semibold text-blue-400 mb-3">Professional Development Impact</h4>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    {systemScriptsOutcomes.map((outcome, i) => (
+                      <div key={i} className="flex gap-2 text-sm text-slate-300">
+                        <span className="text-green-400 mt-0.5">✓</span>
+                        <span>{outcome}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mb-6 p-4 bg-slate-700/30 rounded-lg">
+                  <h4 className="text-sm font-semibold text-blue-400 mb-3">Enterprise-Ready Features</h4>
+                  <p className="text-sm text-slate-300 mb-4">
+                    Built with production environment requirements in mind, this toolkit emphasizes security, reliability, and professional standards 
+                    that would be essential in enterprise IT support roles.
+                  </p>
+                  <a 
+                    href="https://github.com/ljohnson2382/system-scripts" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/25"
+                  >
+                    <Github size={18} />
+                    See Code
+                  </a>
+                </div>
+
+                <div>
+                  <h4 className="text-sm font-semibold text-blue-400 mb-3">Technologies & Skills Demonstrated</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {systemScriptsSkills.map((skill, i) => (
+                      <span key={i} className="text-xs px-2 py-1 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-full text-slate-300">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Project 9 & 10: Grid */}
             <div className="grid md:grid-cols-2 gap-8">
               {/* Cross-Functional Collaboration */}
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-8 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300">
@@ -1343,13 +1490,21 @@ function App() {
             <p className="text-slate-400 mb-2">
               © 2025 Loyd Johnson | Professional IT Portfolio
             </p>
-            <div className="space-y-1">
-              <p className="text-slate-500 text-sm">
-                <a href="https://github.com/ljohnson2382/portfolio-site" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">View Source Code on GitHub</a>
-              </p>
-              <p className="text-slate-500 text-sm">
-                Beyond technology: <a href="./photo.html" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">photo.loydjohnson.com</a>
-              </p>
+            <div className="space-y-3">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start sm:items-center sm:justify-between">
+                <a 
+                  href="https://github.com/ljohnson2382" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-r from-slate-700 to-slate-600 hover:from-slate-600 hover:to-slate-500 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-slate-500/25 text-slate-300 hover:text-white"
+                  aria-label="GitHub Profile"
+                >
+                  <Github size={20} />
+                </a>
+                <span className="text-slate-500 text-sm">
+                  Beyond technology: <a href="./photo.html" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">photo.loydjohnson.com</a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
