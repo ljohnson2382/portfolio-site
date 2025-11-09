@@ -36,6 +36,12 @@ function LearningPhilosophySection() {
       description: "Virtualized enterprise infrastructure with security hardening, monitoring, and automation",
       link: "https://github.com/ljohnson2382/homelab-enterprise-simulation",
       technologies: ["Linux Administration", "Security Hardening", "Infrastructure Automation", "Monitoring"]
+    },
+    {
+      title: "System Scripts Automation Toolkit",
+      description: "Cross-platform Python automation framework for system administration and help desk operations",
+      link: "https://github.com/ljohnson2382/system-scripts",
+      technologies: ["Python Development", "Cross-Platform Automation", "Help Desk Tools", "Enterprise Standards"]
     }
   ];
 
