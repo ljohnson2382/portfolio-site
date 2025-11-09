@@ -147,6 +147,23 @@ export const dnsSSLSkills = [
   'Network Security', 'Systems Integration', 'Technical Documentation'
 ];
 
+// System Scripts Project Data
+export const systemScriptsOutcomes = [
+  'Built comprehensive cross-platform automation toolkit supporting 5+ operating systems',
+  'Developed modular Python framework with enterprise-grade logging and error handling',
+  'Created help desk troubleshooting tools reducing manual diagnostic time by 70%',
+  'Implemented security-first automation with configurable safety checks and validation',
+  'Established professional SOPs for network, performance, and system maintenance',
+  'Deployed production-ready scripts with comprehensive documentation and testing'
+];
+
+export const systemScriptsSkills = [
+  'Python Development', 'Cross-Platform Automation', 'System Administration', 
+  'Network Diagnostics', 'Performance Analysis', 'Windows PowerShell',
+  'Linux Bash Scripting', 'Help Desk Tools', 'Configuration Management',
+  'Logging & Monitoring', 'Error Handling', 'Documentation', 'DevOps Practices'
+];
+
 // Additional certifications and professional highlights
 export const professionalHighlights = [
   'ITIL 4 Foundation Certified',
