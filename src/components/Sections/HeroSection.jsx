@@ -1,8 +1,12 @@
 import { Download, ChevronDown } from 'lucide-react';
+import { memo, useMemo } from 'react';
 import { aboutStats } from '../../data/portfolio-data.js';
 import { heroStyles as styles } from '../../styles/constants/heroStyles.js';
 
 function HeroSection({ onScrollToSection }) {
+  // Memoize the stats to avoid recalculating on every render
+  const displayStats = useMemo(() => aboutStats.slice(0, 3), []);
+
   return (
     <section id="home" className={styles.section}>
       <div className={styles.background}>
@@ -45,7 +49,7 @@ function HeroSection({ onScrollToSection }) {
         </div>
 
         <div className={styles.statsGrid}>
-          {aboutStats.slice(0, 3).map((stat, index) => (
+          {displayStats.map((stat, index) => (
             <div key={index} className={styles.statCard}>
               <div className={styles.statNumber}>
                 {stat.number}
@@ -66,4 +70,4 @@ function HeroSection({ onScrollToSection }) {
   );
 }
 
-export default HeroSection;
+export default memo(HeroSection);

@@ -1,13 +1,15 @@
 import { Users, TrendingUp, Target, Award } from 'lucide-react';
+import { memo, useMemo } from 'react';
 import { aboutStyles as styles } from '../../styles/constants/aboutStyles.js';
 
 function AboutSection() {
-  const approachItems = [
+  // Memoize the approach items to prevent recreation on every render
+  const approachItems = useMemo(() => [
     { icon: <Users size={20} />, title: 'Strategic Stakeholder Partnership Building', desc: 'Building bridges between business objectives and IT capabilities' },
     { icon: <TrendingUp size={20} />, title: 'Data-Driven Process Improvement', desc: 'Designing solutions based on real insights and measurable results' },
     { icon: <Target size={20} />, title: 'Cross-Functional Collaboration Leadership', desc: 'Bringing diverse perspectives together for optimal outcomes' },
     { icon: <Award size={20} />, title: 'Customer-Centric Service Delivery', desc: 'Keeping the end user at the center of every decision' }
-  ];
+  ], []);
 
   return (
     <section id="about" className={styles.section}>
@@ -92,4 +94,4 @@ function AboutSection() {
   );
 }
 
-export default AboutSection;
+export default memo(AboutSection);

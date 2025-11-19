@@ -1,25 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 import { Download, Mail, Linkedin, ChevronDown, Award, Briefcase, Users, TrendingUp, Target, Database, Cloud, Code, Phone, Lock, Shield, Globe, Network, Settings, Github } from 'lucide-react';
 import { 
   skillsCategories, 
-  aboutStats, 
-  experienceData, 
   velocityProjectOutcomes,
-  laptopLockerOutcomes,
   servicenowOutcomes,
   dnsSSLOutcomes,
   systemScriptsOutcomes,
   velocitySkills,
-  laptopLockerSkills,
   servicenowSkills,
   dnsSSLSkills,
-  systemScriptsSkills,
-  professionalHighlights,
-  contactInfo
+  systemScriptsSkills
 } from './data/portfolio-data.js';
 import { scrollToSection } from './utils/helpers.js';
 import { useScrollHandler } from './hooks/useScrollHandler.js';
-import { commonStyles } from './styles/constants/commonStyles.js';
 
 // Components
 import Navigation from './components/Navigation/Navigation.jsx';
@@ -32,31 +25,35 @@ function App() {
   const { scrolled, activeSection, showHomeButton } = useScrollHandler();
 
   // Helper function to get icon component by name
-  const getIcon = (iconName, size = 24) => {
+  const getIcon = useCallback((iconName, size = 24) => {
     const icons = {
       Database: <Database size={size} />,
       Cloud: <Cloud size={size} />,
       Code: <Code size={size} />
     };
     return icons[iconName] || null;
-  };
+  }, []);
 
-  // Wrapper for imported scrollToSection
-  const handleScrollToSection = (sectionId) => {
+  // Wrapper for imported scrollToSection with useCallback
+  const handleScrollToSection = useCallback((sectionId) => {
     scrollToSection(sectionId);
-  };
-
-  // Style constants for remaining sections
-  const styles = commonStyles;
+  }, []);
 
   // Load Credly script for credential badge functionality
   useEffect(() => {
+    // Check if script already exists to avoid duplicate loads
+    const existingScript = document.querySelector('script[src="//cdn.credly.com/assets/utilities/embed.js"]');
+    if (existingScript) {
+      return;
+    }
+
     const script = document.createElement('script');
     script.src = '//cdn.credly.com/assets/utilities/embed.js';
     script.async = true;
     document.body.appendChild(script);
     
     return () => {
+      // Only remove if we added it and it still exists
       if (document.body.contains(script)) {
         document.body.removeChild(script);
       }
