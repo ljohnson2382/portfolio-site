@@ -154,6 +154,7 @@ function App() {
               src="/images/keyboard-alerts.jpg" 
               alt="" 
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           
@@ -1220,6 +1221,7 @@ function App() {
             src="/images/ai-chip.jpg" 
             alt="" 
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
         
