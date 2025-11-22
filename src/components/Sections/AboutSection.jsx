@@ -1,13 +1,15 @@
 import { Users, TrendingUp, Target, Award } from 'lucide-react';
+import { memo, useMemo } from 'react';
 import { aboutStyles as styles } from '../../styles/constants/aboutStyles.js';
 
 function AboutSection() {
-  const approachItems = [
+  // Memoize the approach items to prevent recreation on every render
+  const approachItems = useMemo(() => [
     { icon: <Users size={20} />, title: 'Strategic Stakeholder Partnership Building', desc: 'Building bridges between business objectives and IT capabilities' },
     { icon: <TrendingUp size={20} />, title: 'Data-Driven Process Improvement', desc: 'Designing solutions based on real insights and measurable results' },
     { icon: <Target size={20} />, title: 'Cross-Functional Collaboration Leadership', desc: 'Bringing diverse perspectives together for optimal outcomes' },
     { icon: <Award size={20} />, title: 'Customer-Centric Service Delivery', desc: 'Keeping the end user at the center of every decision' }
-  ];
+  ], []);
 
   return (
     <section id="about" className={styles.section}>
@@ -32,6 +34,7 @@ function AboutSection() {
                 src="/images/digital-automation.jpg" 
                 alt="Digital Technology" 
                 className={styles.image + " rounded-lg"}
+                loading="lazy"
               />
               <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
                 <img 
@@ -39,6 +42,7 @@ function AboutSection() {
                   alt="Loyd Johnson Headshot" 
                   className="rounded-full object-cover border-4 border-cyan-400 shadow-2xl bg-slate-900" 
                   style={{ width: '85%', height: '85%', maxWidth: '420px', maxHeight: '90%', padding: '2.5%', boxSizing: 'border-box' }}
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -92,4 +96,4 @@ function AboutSection() {
   );
 }
 
-export default AboutSection;
+export default memo(AboutSection);

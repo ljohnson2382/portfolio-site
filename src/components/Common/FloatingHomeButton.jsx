@@ -1,4 +1,5 @@
 import { Home } from 'lucide-react';
+import { memo } from 'react';
 import { scrollToTop } from '../../utils/helpers.js';
 
 function FloatingHomeButton({ show }) {
@@ -15,4 +16,4 @@ function FloatingHomeButton({ show }) {
   );
 }
 
-export default FloatingHomeButton;
+export default memo(FloatingHomeButton);
