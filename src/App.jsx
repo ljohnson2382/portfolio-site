@@ -20,6 +20,7 @@ import HeroSection from './components/Sections/HeroSection.jsx';
 import AboutSection from './components/Sections/AboutSection.jsx';
 import LearningPhilosophySection from './components/Sections/LearningPhilosophySection.jsx';
 import FloatingHomeButton from './components/Common/FloatingHomeButton.jsx';
+// CareerRoadmap removed per request
 
 function App() {
   const { scrolled, activeSection, showHomeButton } = useScrollHandler();
@@ -77,6 +78,8 @@ function App() {
 
       {/* Learning Philosophy Section */}
       <LearningPhilosophySection />
+
+      {/* Career Roadmap removed per request */}
 
       {/* Experience Section */}
       <section id="experience" className="py-20 bg-slate-950">
@@ -1282,16 +1285,20 @@ function App() {
               {/* AI in Professional Practice - In Progress */}
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-purple-500/50 hover:border-purple-400 transition-all duration-300">
                 <div className="flex justify-center mb-4">
-                  <div className="w-36 h-36 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 border-2 border-purple-500/50 flex flex-col items-center justify-center">
-                    <span className="text-5xl mb-2">🤖</span>
-                    <span className="text-xs text-slate-400">NEU</span>
+                    <div className="relative" style={{width: '150px', height: '270px'}}>
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <a href="https://northeastern.badges.parchment.com/public/credentials/V2DNieIqQUCKomsfpNv9yg?identity__email=johnson.loy%40northeastern.edu" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center">
+                          <img src="https://api.badgr.io/public/badges/v9ysE5JXR42RkzPRzyi6EA/image" alt="AI in Professional Practice badge" className="max-w-[150px] max-h-[240px] object-contain rounded-md" />
+                        </a>
+                      </div>
+                      <div className="absolute border-2 border-purple-500/50 rounded-lg z-30 pointer-events-none" style={{width: '152px', height: '272px', top: '-1px', left: '-1px'}}></div>
+                    </div>
                   </div>
-                </div>
                 <h4 className="text-lg font-semibold text-slate-200 text-center mb-2">AI in Professional Practice</h4>
                 <p className="text-slate-300 text-center mb-2">Northeastern University</p>
                 <div className="text-center">
                   <span className="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm border border-purple-500/30">
-                    Completing Nov 2025
+                    Issued: Jan 2, 2026
                   </span>
                 </div>
               </div>
