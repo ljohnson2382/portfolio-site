@@ -37,10 +37,10 @@ export const skillsCategories = [
 
 // About section stats
 export const aboutStats = [
-  { number: '10+', label: 'Years Experience' },
-  { number: '91', label: 'Devices Lifecycle-Managed' },
+  { number: '5+', label: 'Years Experience' },
+  { number: '4000', label: 'Devices Lifecycle-Managed' },
   { number: '111%', label: 'Ticket Capacity Increase' },
-  { number: '2,000+', label: 'Tickets Resolved' }
+  { number: '2,500+', label: 'Tickets Resolved' }
 ];
 
 // Experience data
@@ -51,13 +51,16 @@ export const experienceData = [
     period: 'January 2026 - Present',
     description: 'Delivering Tier 2 endpoint and systems support across the Americas region for a global cybersecurity enterprise, coordinating escalations with global service teams, the local help desk, and US IT.',
     achievements: [
-      'Executed secure disposal of 91 devices (72 MacBook Pro T2; 19 Dell Latitude 5730 and Precision 7730), reconciling every asset record in ServiceNow and deprovisioning each unit from Jamf and Intune',
+      'Executed secure disposal of 806 devices (72 MacBook Pro T2; 734 Dell Latitude 5730 and Precision 7730), reconciling every asset record in ServiceNow and deprovisioning each unit from Jamf and Intune',
       'Authored the cross-platform secure erasure SOP covering Blancco on T2 through M5 Apple silicon and Dell hardware, with documented fallback paths for non-booting units',
       'Redesigned the enterprise off-boarding workflow, lifting monthly ticket capacity from a prior high of 117 to 217 and then 247 during acquisition-driven peak volume — a 111% increase achieved after the team lost three technicians',
       'Built the Asset Lifecycle Management Dashboard in ServiceNow, spanning off-boarding, recovery, reimaging, return-to-inventory, and disposal with technician-attributed reporting',
       'Designed a 9-color physical inventory system using color-coded dry erase board magnets mapped to asset lifecycle stages in ServiceNow, enabling immediate visual triage without system access',
-      'Rebuilt the intake pipeline for off-boarded and refreshed laptops with a PowerShell-driven image-and-rebuild process that detects device model, installs correct drivers, and runs Dell Command Update unattended during OOBE, leaving roughly 100 endpoints deploy-ready on demand',
-      'Migrated approximately 120 endpoints from the CyberArk image to the Palo Alto Networks standard image during post-acquisition integration'
+      'Rebuilt the intake pipeline for off-boarded and refreshed laptops with a PowerShell-driven image-and-rebuild process that detects device model, installs correct drivers, and runs Dell Command Update unattended during OOBE, leaving roughly 287 endpoints deploy-ready on demand',
+      'Migrated approximately 120 endpoints from the CyberArk image to the Palo Alto Networks standard image during post-acquisition integration',
+      'Migrated 101 devices from the CyberArk Intune tenant to the Palo Alto Networks Intune tenant during post-acquisition consolidation',
+      'Updated the hardware-hash enrollment script to add CyberArk laptops to the Palo Alto Networks dynamic device group in Intune, ensuring consistent policy targeting post-migration',
+      'Reconciled the entire stockroom inventory of new and used assets through a full device refresh cycle, maintaining accurate records of 287 laptops'
     ]
   },
   {
@@ -195,9 +198,11 @@ export const cyberArkOutcomes = [
   'Built centralized ServiceNow dashboard covering off-boarding, recovery, reimaging, and disposal',
   'Authored cross-platform secure erasure SOP spanning Apple silicon (T2-M5) and Dell hardware',
   'Migrated ~120 endpoints to the Palo Alto Networks standard image during post-acquisition integration',
-  'Restored full asset lifecycle accuracy across Jamf, Intune, and ServiceNow after 91-device disposal',
-  'Rebuilt automated PowerShell imaging pipeline, keeping ~100 endpoints deploy-ready on demand',
-  'Implemented a 9-color physical inventory system for instant visual lifecycle triage'
+  'Restored full asset lifecycle accuracy across Jamf, Intune, and ServiceNow after 806-device disposal',
+  'Rebuilt automated PowerShell imaging pipeline, keeping ~287 endpoints deploy-ready on demand',
+  'Implemented a 9-color physical inventory system for instant visual lifecycle triage',
+  'Migrated 101 devices between Intune tenants and updated dynamic group enrollment for post-acquisition policy targeting',
+  'Reconciled the full stockroom inventory of new and used assets through a complete refresh cycle'
 ];
 
 export const cyberArkSkills = [

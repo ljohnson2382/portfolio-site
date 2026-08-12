@@ -70,7 +70,7 @@ function AboutSection() {
         {/* Text Content - Full Width */}
         <div className={styles.textSection}>
           <p>
-            I'm an IT professional who believes technology should serve people, not the other way around. With over a decade of experience spanning enterprise endpoint support, asset lifecycle management, and operational leadership, I've built my career on a simple principle: the best technical solutions are the ones that genuinely improve how people work and connect.
+            I'm an IT professional who believes technology should serve people, not the other way around. With over five years of experience spanning enterprise endpoint support, asset lifecycle management, and operational leadership, I've built my career on a simple principle: the best technical solutions are the ones that genuinely improve how people work and connect.
           </p>
           <p>
             My operations background has taught me the importance of truly understanding how people work before implementing new technology. I've learned that the most successful solutions often aren't the most technically impressive ones—they're the ones that fit naturally into existing workflows and feel intuitive to the people using them. When I approach a new project, I spend time learning from the actual users: what works well in their current process, what frustrates them, and what would genuinely make their day easier. This collaborative approach helps me identify opportunities to reduce complexity and create solutions that people actually want to use.

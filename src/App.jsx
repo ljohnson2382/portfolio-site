@@ -209,7 +209,7 @@ function App() {
                     <ul className="space-y-2 text-sm text-slate-300">
                       <li className="flex gap-2">
                         <span className="text-cyan-400 mt-0.5">•</span>
-                        <span>Executed secure disposal of 91 devices (72 MacBook Pro T2; 19 Dell Latitude 5730 and Precision 7730)</span>
+                        <span>Executed secure disposal of 806 devices (72 MacBook Pro T2; 734 Dell Latitude 5730 and Precision 7730)</span>
                       </li>
                       <li className="flex gap-2">
                         <span className="text-cyan-400 mt-0.5">•</span>
@@ -227,6 +227,10 @@ function App() {
                         <span className="text-cyan-400 mt-0.5">•</span>
                         <span>Designed a 9-color physical inventory system mapping color-coded board magnets to ServiceNow lifecycle stages for instant visual triage</span>
                       </li>
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>Reconciled the entire stockroom inventory of new and used assets through a full device refresh cycle, maintaining accurate records of 287 laptops</span>
+                      </li>
                     </ul>
                   </div>
 
@@ -243,11 +247,19 @@ function App() {
                       </li>
                       <li className="flex gap-2">
                         <span className="text-purple-400">→</span>
-                        <span>Rebuilt laptop intake pipeline with a PowerShell-driven image-and-rebuild process, keeping ~100 endpoints deploy-ready on demand</span>
+                        <span>Rebuilt laptop intake pipeline with a PowerShell-driven image-and-rebuild process, keeping ~287 endpoints deploy-ready on demand</span>
                       </li>
                       <li className="flex gap-2">
                         <span className="text-purple-400">→</span>
                         <span>Migrated ~120 endpoints to the Palo Alto Networks standard image post-acquisition</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-purple-400">→</span>
+                        <span>Migrated 101 devices from the CyberArk Intune tenant to the Palo Alto Networks Intune tenant</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-purple-400">→</span>
+                        <span>Updated the hardware-hash enrollment script to add CyberArk laptops to Palo Alto's dynamic device group in Intune</span>
                       </li>
                       <li className="flex gap-2">
                         <span className="text-purple-400">→</span>
