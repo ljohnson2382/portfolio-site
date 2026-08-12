@@ -1,7 +1,9 @@
 import { BookOpen, Target, Lightbulb, GitBranch, ExternalLink } from 'lucide-react';
+import { memo, useMemo } from 'react';
 
 function LearningPhilosophySection() {
-  const philosophyItems = [
+  // Memoize static data to prevent recreation on every render
+  const philosophyItems = useMemo(() => [
     {
       icon: <Target size={24} />,
       title: "Intentional Over-Engineering",
@@ -22,9 +24,9 @@ function LearningPhilosophySection() {
       title: "Strategic Professional Preparation",
       description: "Building comprehensive enterprise experience through deliberate complexity and thorough documentation."
     }
-  ];
+  ], []);
 
-  const learningProjects = [
+  const learningProjects = useMemo(() => [
     {
       title: "Enterprise Learning Framework",
       description: "Comprehensive methodology for gaining enterprise development experience through personal projects",
@@ -43,7 +45,7 @@ function LearningPhilosophySection() {
       link: "https://github.com/ljohnson2382/system-scripts",
       technologies: ["Python Development", "Cross-Platform Automation", "Help Desk Tools", "Enterprise Standards"]
     }
-  ];
+  ], []);
 
   return (
     <section id="learning-philosophy" className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
@@ -145,4 +147,4 @@ function LearningPhilosophySection() {
   );
 }
 
-export default LearningPhilosophySection;
+export default memo(LearningPhilosophySection);

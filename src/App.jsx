@@ -15,6 +15,8 @@ import {
   dnsSSLSkills,
   systemScriptsSkills,
   professionalHighlights,
+  cyberArkOutcomes,
+  cyberArkSkills,
   contactInfo
 } from './data/portfolio-data.js';
 import { scrollToSection } from './utils/helpers.js';
@@ -27,7 +29,6 @@ import HeroSection from './components/Sections/HeroSection.jsx';
 import AboutSection from './components/Sections/AboutSection.jsx';
 import LearningPhilosophySection from './components/Sections/LearningPhilosophySection.jsx';
 import FloatingHomeButton from './components/Common/FloatingHomeButton.jsx';
-// CareerRoadmap removed per request
 
 function App() {
   const { scrolled, activeSection, showHomeButton } = useScrollHandler();
@@ -82,8 +83,6 @@ function App() {
       {/* Learning Philosophy Section */}
       <LearningPhilosophySection />
 
-      {/* Career Roadmap removed per request */}
-
       {/* Experience Section */}
       <section id="experience" className="py-20 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -94,42 +93,7 @@ function App() {
           </h2>
 
           <div className="space-y-12">
-            {[
-              {
-                title: 'IT Client Support Specialist',
-                company: 'Northeastern University',
-                period: 'April 2022 - Present',
-                highlights: [
-                  'Serve as primary technology liaison for 38,000+ students, 3,000+ faculty, and 4,000+ staff across 13 global campus locations',
-                  'Designed and implemented comprehensive analytics dashboard that increased team workflow efficiency',
-                  'Recognized by management for "tremendous job in collaborating" across departments and initiatives',
-                  'Mentor junior analysts on technical procedures and customer service excellence',
-                  'Developed expertise in equipment and asset management across multiple campus locations'
-                ]
-              },
-              {
-                title: 'Operations Manager',
-                company: 'Elite Delivery Services',
-                period: 'March 2017 - 2022',
-                highlights: [
-                  'Managed daily operations for 30-driver fleet, improving on-time delivery rate by 18%',
-                  'Reduced operational costs by 12% through data-driven route optimization',
-                  'Decreased employee turnover by 25% through strategic workforce development',
-                  'Resolved complex delivery escalations, increasing customer satisfaction scores by 20%',
-                  'Developed customer communication protocols that enhanced relationship management'
-                ]
-              },
-              {
-                title: 'Assistant Recording Engineer',
-                company: 'Q Division',
-                period: 'May 2014 - 2017',
-                highlights: [
-                  'Served as technical lead during complex studio sessions',
-                  'Coordinated between lead engineers, artists, and support staff for seamless project delivery',
-                  'Managed pre-session planning including resource allocation and technical setup'
-                ]
-              }
-            ].map((job, index) => (
+            {experienceData.map((job, index) => (
               <div key={index} className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-8 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                   <div>
@@ -138,8 +102,9 @@ function App() {
                   </div>
                   <span className="text-slate-400 mt-2 md:mt-0">{job.period}</span>
                 </div>
+                <p className="text-slate-300 mb-4">{job.description}</p>
                 <ul className="space-y-2 text-slate-300">
-                  {job.highlights.map((highlight, i) => (
+                  {job.achievements.map((highlight, i) => (
                     <li key={i} className="flex gap-3">
                       <span className="text-cyan-400 mt-1">•</span>
                       <span>{highlight}</span>
@@ -222,6 +187,98 @@ function App() {
           </p>
 
           <div className="space-y-8">
+            {/* Project 0: CyberArk Asset Lifecycle & Endpoint Support */}
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 overflow-hidden">
+              <div className="p-8">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="p-3 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-lg">
+                    <Shield size={32} className="text-cyan-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-slate-200 mb-2">Enterprise Asset Lifecycle & Endpoint Support</h3>
+                    <p className="text-slate-400 text-sm mb-2">CyberArk, A Palo Alto Networks Company (via Beacon Hill Staffing) • January 2026 - Present</p>
+                    <p className="text-slate-300">
+                      Delivering Tier 2 endpoint and systems support across the Americas region for a global cybersecurity enterprise, redesigning core asset lifecycle and off-boarding workflows during a corporate acquisition.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <h4 className="text-sm font-semibold text-cyan-400 mb-3">Asset Lifecycle & Disposal</h4>
+                    <ul className="space-y-2 text-sm text-slate-300">
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>Executed secure disposal of 91 devices (72 MacBook Pro T2; 19 Dell Latitude 5730 and Precision 7730)</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>Authored cross-platform secure erasure SOP covering Blancco on T2 through M5 Apple silicon and Dell hardware</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>Documented fallback erasure paths for non-booting units, making disposal fully audit-ready</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>Reconciled every asset record in ServiceNow and deprovisioned units from Jamf and Intune</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-cyan-400 mt-0.5">•</span>
+                        <span>Designed a 9-color physical inventory system mapping color-coded board magnets to ServiceNow lifecycle stages for instant visual triage</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="text-sm font-semibold text-cyan-400 mb-3">Workflow Redesign & M&A Integration</h4>
+                    <ul className="space-y-2 text-sm text-slate-300">
+                      <li className="flex gap-2">
+                        <span className="text-purple-400">→</span>
+                        <span>Redesigned enterprise off-boarding workflow, lifting monthly ticket capacity from 117 to 247</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-purple-400">→</span>
+                        <span>Built Asset Lifecycle Management Dashboard in ServiceNow spanning off-boarding through disposal</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-purple-400">→</span>
+                        <span>Rebuilt laptop intake pipeline with a PowerShell-driven image-and-rebuild process, keeping ~100 endpoints deploy-ready on demand</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-purple-400">→</span>
+                        <span>Migrated ~120 endpoints to the Palo Alto Networks standard image post-acquisition</span>
+                      </li>
+                      <li className="flex gap-2">
+                        <span className="text-purple-400">→</span>
+                        <span>Coordinated Tier 2 escalations with global service teams, local help desk, and US IT</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="text-sm font-semibold text-cyan-400 mb-3">Impact</h4>
+                  <div className="grid md:grid-cols-2 gap-3">
+                    {cyberArkOutcomes.map((item, i) => (
+                      <div key={i} className="flex gap-2 text-sm text-slate-300">
+                        <span className="text-green-400">✓</span>
+                        <span>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2">
+                  {cyberArkSkills.map((skill, i) => (
+                    <span key={i} className="text-xs px-3 py-1 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-full text-slate-300">
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             {/* Project 1: Walk-up Dashboard */}
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 overflow-hidden">
               <div className="p-8">
@@ -702,9 +759,9 @@ function App() {
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-slate-200">Enterprise DNS & SSL Implementation</h3>
               <p className="text-slate-300 mb-6">
-                Comprehensive infrastructure implementation demonstrating enterprise-grade DNS management with Azure, Microsoft 365 email integration, 
-                and SSL/TLS certificate deployment strategy. Self-directed technical initiative showcasing practical application of Network+ 
-                certification concepts and modern cloud infrastructure management skills.
+                Comprehensive infrastructure implementation demonstrating enterprise-grade DNS management with Azure, Microsoft 365 email integration,
+                and SSL/TLS certificate deployment strategy. Self-directed technical initiative showcasing practical application of core networking
+                fundamentals and modern cloud infrastructure management skills.
               </p>
 
               <div className="mb-6">
@@ -813,7 +870,7 @@ function App() {
               </div>
 
               <div className="mb-6">
-                <h4 className="text-sm font-semibold text-blue-400 mb-3">Network+ Certification Alignment & Technical Skills</h4>
+                <h4 className="text-sm font-semibold text-blue-400 mb-3">Networking Fundamentals & Technical Skills</h4>
                 <div className="grid md:grid-cols-2 gap-4 mb-4">
                   <div className="bg-slate-900/30 rounded-lg p-3 border border-slate-700">
                     <h5 className="text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">DNS & Networking Concepts</h5>
@@ -1246,13 +1303,13 @@ function App() {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
                 <h4 className="text-xl font-semibold text-slate-200 mb-2">Bachelor of Science in Information Technology</h4>
-                <p className="text-slate-300">Northeastern University</p>
-                <p className="text-cyan-400 font-medium">In Progress</p>
+                <p className="text-slate-300">Northeastern University • 2022 - Present</p>
+                <p className="text-cyan-400 font-medium">In Progress • GPA: 3.86</p>
               </div>
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-slate-700">
                 <h4 className="text-xl font-semibold text-slate-200 mb-2">Associate Degree in General Business</h4>
                 <p className="text-slate-300">Bay State College</p>
-                <p className="text-slate-400">2003</p>
+                <p className="text-slate-400">2001 - 2003</p>
               </div>
             </div>
           </div>
@@ -1283,43 +1340,36 @@ function App() {
                 </div>
               </div>
 
-              {/* AI in Professional Practice - In Progress */}
+              {/* AI in Professional Practice - Complete */}
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-purple-500/50 hover:border-purple-400 transition-all duration-300">
                 <div className="flex justify-center mb-4">
-                    <div className="relative" style={{width: '150px', height: '270px'}}>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <a href="https://northeastern.badges.parchment.com/public/credentials/V2DNieIqQUCKomsfpNv9yg?identity__email=johnson.loy%40northeastern.edu" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center">
-                          <img src="https://api.badgr.io/public/badges/v9ysE5JXR42RkzPRzyi6EA/image" alt="AI in Professional Practice badge" className="max-w-[150px] max-h-[240px] object-contain rounded-md" />
-                        </a>
-                      </div>
-                      <div className="absolute border-2 border-purple-500/50 rounded-lg z-30 pointer-events-none" style={{width: '152px', height: '272px', top: '-1px', left: '-1px'}}></div>
-                    </div>
+                  <div className="w-36 h-36 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-500/20 border-2 border-purple-500/50 flex flex-col items-center justify-center">
+                    <span className="text-5xl mb-2">🤖</span>
+                    <span className="text-xs text-slate-400">NEU</span>
                   </div>
+                </div>
                 <h4 className="text-lg font-semibold text-slate-200 text-center mb-2">AI in Professional Practice</h4>
                 <p className="text-slate-300 text-center mb-2">Northeastern University</p>
                 <div className="text-center">
-                  <span className="inline-block px-3 py-1 bg-purple-500/20 text-purple-400 rounded-full text-sm border border-purple-500/30">
-                    Issued: Jan 2, 2026
+                  <span className="inline-block px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30">
+                    ✓ Completed Nov 2025
                   </span>
                 </div>
               </div>
 
-              {/* Network+ - Studying */}
+              {/* ITIL 4 & ServiceNow Administration */}
               <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-6 border border-cyan-500/50 hover:border-cyan-400 transition-all duration-300">
                 <div className="flex justify-center mb-4">
                   <div className="w-36 h-36 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border-2 border-cyan-500/50 flex flex-col items-center justify-center">
-                    <span className="text-5xl mb-2">🔒</span>
-                    <div className="w-24 h-2 bg-slate-700 rounded-full overflow-hidden mt-2">
-                      <div className="w-[100%] h-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
-                    </div>
-                    <span className="text-xs text-slate-400 mt-1">100% Complete</span>
+                    <span className="text-5xl mb-2">⚙️</span>
+                    <span className="text-xs text-slate-400">LinkedIn Learning</span>
                   </div>
                 </div>
-                <h4 className="text-lg font-semibold text-slate-200 text-center mb-2">CompTIA Network+</h4>
-                <p className="text-slate-300 text-center mb-2">Industry Certification</p>
+                <h4 className="text-lg font-semibold text-slate-200 text-center mb-2">ITIL 4 & ServiceNow Administration</h4>
+                <p className="text-slate-300 text-center mb-2">Service Management Foundations</p>
                 <div className="text-center">
-                  <span className="inline-block px-3 py-1 bg-cyan-500/20 text-cyan-400 rounded-full text-sm border border-cyan-500/30">
-                    📚 Exam: Mid Nov 2025
+                  <span className="inline-block px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-sm border border-green-500/30">
+                    ✓ Completed 2025
                   </span>
                 </div>
               </div>
@@ -1334,27 +1384,33 @@ function App() {
             <h3 className="text-2xl font-semibold mb-6 text-cyan-400">📚 Continuous Professional Development</h3>
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-8 border border-slate-700">
               <p className="text-slate-300 mb-6">
-                Completed 15+ specialized training courses across business analysis, leadership, and emerging technologies
+                Completed 15+ specialized training courses across leadership, project management, and IT systems
               </p>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="font-semibold text-slate-200 mb-3">Strategic Business & Leadership</h4>
+                  <h4 className="font-semibold text-slate-200 mb-3">Leadership & Management</h4>
                   <ul className="space-y-2 text-sm text-slate-300">
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Business Analysis & Process Management</li>
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Leading Your Team to Excellence</li>
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Leadership Effectiveness</li>
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Customer Experience Leadership</li>
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Managing a Customer Service Team</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Essentials of Management (Tandem Solutions, 2025)</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Business Analysis & Process Management (2025)</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Leadership & Customer Experience series (4 courses, 2024)</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-slate-200 mb-3">Technology & IT Service Management</h4>
+                  <h4 className="font-semibold text-slate-200 mb-3">Project Management & Process Improvement</h4>
                   <ul className="space-y-2 text-sm text-slate-300">
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> ITIL 4 Service Management Foundations</li>
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> ServiceNow: Basic Administration</li>
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Azure Fundamentals Preparation</li>
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> AI Automation with Claude API</li>
-                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Intelligent Automation Foundations</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Google Project Management (6-course series)</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Process Improvement Foundations (2025)</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Requirements Elicitation and Analysis (2025)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-slate-200 mb-3">IT, Systems & AI Automation</h4>
+                  <ul className="space-y-2 text-sm text-slate-300">
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Microsoft Azure Fundamentals (AZ-900) Prep</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Intro to Service Management with ITIL 4 (2025)</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> ServiceNow: Basic Administration (2024)</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> AI Automation with Claude's Agentic Computer Use (2025)</li>
+                    <li className="flex gap-2"><span className="text-cyan-400">•</span> Intelligent Automation Foundations (2025)</li>
                   </ul>
                 </div>
               </div>

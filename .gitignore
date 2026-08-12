@@ -22,10 +22,15 @@ dist-ssr
 # Azure
 .azure/
 staticwebapp.config.json
+azure-functions/local.settings.json
+
+# Local-only planning documents
+REQUEST_WORKFLOW_IMPLEMENTATION.md
 
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
+.claude/
 .idea
 .DS_Store
 *.suo

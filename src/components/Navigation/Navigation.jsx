@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback, memo } from 'react';
 import { Menu, X } from 'lucide-react';
 import { navItems } from '../../data/portfolio-data.js';
 import { navigationStyles as styles } from '../../styles/constants/navigationStyles.js';
@@ -6,10 +6,10 @@ import { navigationStyles as styles } from '../../styles/constants/navigationSty
 function Navigation({ scrolled, activeSection, onScrollToSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleScrollToSection = (sectionId) => {
+  const handleScrollToSection = useCallback((sectionId) => {
     onScrollToSection(sectionId);
     setIsMenuOpen(false);
-  };
+  }, [onScrollToSection]);
 
   return (
     <nav className={`${styles.base} ${scrolled ? styles.scrolled : styles.transparent}`}>
@@ -79,4 +79,4 @@ function Navigation({ scrolled, activeSection, onScrollToSection }) {
   );
 }
 
-export default Navigation;
+export default memo(Navigation);

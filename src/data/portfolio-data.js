@@ -16,69 +16,83 @@ export const skillsCategories = [
   {
     iconName: 'Database',
     title: 'Systems & Platforms',
-    skills: ['Active Directory', 'Microsoft Azure', 'Microsoft Intune', 'Jamf', 'ServiceNow', 'Linux', 'Virtualization']
+    skills: ['Active Directory', 'Microsoft Azure', 'Microsoft Intune', 'Jamf', 'DUO Admin', 'Adobe Admin', 'Papercut Admin', 'Global Protect VPN', 'Windows', 'macOS']
   },
   {
     iconName: 'Cloud',
     title: 'Service Management',
-    skills: ['ServiceNow', 'Microsoft Project', 'Asana', 'Process Optimization']
+    skills: ['ServiceNow', 'Microsoft Project', 'Asana', 'ITIL 4', 'Process Optimization']
   },
   {
     iconName: 'Code',
-    title: 'Development & Tools',
-    skills: ['SQL', 'Python', 'JavaScript', 'HTML/CSS', 'PowerShell', 'Git', 'ESLint', 'Prettier', 'Markdown', 'Technical Documentation', 'GitHub Issues']
+    title: 'Development & Automation',
+    skills: ['PowerShell', 'SQL', 'Python', 'JavaScript', 'HTML/CSS', 'Blancco', 'Bomgar Remote Support', 'Git', 'GitHub Issues']
   },
   {
     iconName: 'Palette',
     title: 'Design & Communication',
-    skills: ['Figma', 'Draw.io', 'Adobe XD', 'Technical Writing']
+    skills: ['Figma', 'Draw.io', 'Adobe XD', 'Miro', 'Technical Writing']
   }
 ];
 
 // About section stats
 export const aboutStats = [
   { number: '10+', label: 'Years Experience' },
-  { number: '200+', label: 'Laptops Managed' },
-  { number: '24hr', label: 'Average Resolution Time' },
-  { number: '15+', label: 'Major Projects Led' }
+  { number: '91', label: 'Devices Lifecycle-Managed' },
+  { number: '111%', label: 'Ticket Capacity Increase' },
+  { number: '2,000+', label: 'Tickets Resolved' }
 ];
 
 // Experience data
 export const experienceData = [
   {
+    title: 'IT Systems Support Specialist',
+    company: 'Beacon Hill Staffing — Placed at CyberArk, A Palo Alto Networks Company',
+    period: 'January 2026 - Present',
+    description: 'Delivering Tier 2 endpoint and systems support across the Americas region for a global cybersecurity enterprise, coordinating escalations with global service teams, the local help desk, and US IT.',
+    achievements: [
+      'Executed secure disposal of 91 devices (72 MacBook Pro T2; 19 Dell Latitude 5730 and Precision 7730), reconciling every asset record in ServiceNow and deprovisioning each unit from Jamf and Intune',
+      'Authored the cross-platform secure erasure SOP covering Blancco on T2 through M5 Apple silicon and Dell hardware, with documented fallback paths for non-booting units',
+      'Redesigned the enterprise off-boarding workflow, lifting monthly ticket capacity from a prior high of 117 to 217 and then 247 during acquisition-driven peak volume — a 111% increase achieved after the team lost three technicians',
+      'Built the Asset Lifecycle Management Dashboard in ServiceNow, spanning off-boarding, recovery, reimaging, return-to-inventory, and disposal with technician-attributed reporting',
+      'Designed a 9-color physical inventory system using color-coded dry erase board magnets mapped to asset lifecycle stages in ServiceNow, enabling immediate visual triage without system access',
+      'Rebuilt the intake pipeline for off-boarded and refreshed laptops with a PowerShell-driven image-and-rebuild process that detects device model, installs correct drivers, and runs Dell Command Update unattended during OOBE, leaving roughly 100 endpoints deploy-ready on demand',
+      'Migrated approximately 120 endpoints from the CyberArk image to the Palo Alto Networks standard image during post-acquisition integration'
+    ]
+  },
+  {
     title: 'IT Client Support Specialist',
     company: 'Northeastern University',
-    period: 'April 2022 - Present',
-    description: 'Serve as primary technology liaison for 38,000+ students, 3,000+ faculty, and 4,000+ staff across 13 global campus locations.',
+    period: 'April 2022 - December 2025',
+    description: 'Delivered advanced Tier II and III endpoint support across Windows and macOS environments using Jamf, Intune, Azure AD, and ServiceNow for 38,000+ students, 3,000+ faculty, and 4,000+ staff across 13 global campus locations.',
     achievements: [
-      'Designed and implemented comprehensive analytics dashboard that increased team workflow efficiency',
-      'Recognized by management for "tremendous job in collaborating" across departments and initiatives',
-      'Mentor junior analysts on technical procedures and customer service excellence',
-      'Developed expertise in equipment and asset management across multiple campus locations'
+      'Processed 2,000+ tickets at 31% above team average volume, including 42 high-priority tickets (180% above team average)',
+      'Designed and deployed 4 operational dashboards in ServiceNow to improve team workflow visibility, accountability, and management reporting',
+      'Led knowledge base authoring and junior staff training initiatives; served as lead contributor to the campus locker loaner program and portable charging initiative',
+      'Progressed from Service Desk Analyst to IT Client Support Specialist; consistently rated Exceeds Expectations in annual performance reviews'
     ]
   },
   {
     title: 'Operations Manager',
     company: 'Elite Delivery Services',
-    period: 'March 2017 - 2022',
-    description: 'Managed daily operations for 30-driver fleet with focus on performance optimization and customer satisfaction.',
+    period: 'March 2017 - April 2022',
+    description: 'Managed daily operations for a 30-driver regional fleet with a focus on performance optimization and customer satisfaction.',
     achievements: [
-      'Improved on-time delivery rate by 18% through data-driven route optimization',
-      'Reduced operational costs by 12% through strategic process improvements',
-      'Decreased employee turnover by 25% through workforce development initiatives',
-      'Increased customer satisfaction scores by 20% through enhanced communication protocols'
+      'Improved on-time delivery rate by 18% through data-driven route optimization and strategic planning',
+      'Reduced operational costs by 12% through analytical routing strategies and resource allocation improvements',
+      'Decreased employee turnover by 25% through strategic workforce development and engagement initiatives',
+      'Resolved complex delivery escalations and client conflicts, increasing customer satisfaction scores by 20%'
     ]
   },
   {
-    title: 'Assistant Recording Engineer',
-    company: 'Q Division',
-    period: 'May 2014 - 2017',
-    description: 'Provided technical leadership during complex studio sessions and project coordination.',
+    title: 'Assistant Engineer',
+    company: 'Q Division Studios',
+    period: 'September 2013 - December 2017',
+    description: 'Supported high-profile studio sessions in Somerville, MA, coordinating with producers, artists, and lead engineers to ensure seamless execution.',
     achievements: [
-      'Served as technical lead during complex studio sessions',
-      'Coordinated between lead engineers, artists, and support staff for seamless project delivery',
-      'Managed pre-session planning including resource allocation and technical setup',
-      'Maintained high-quality standards for professional audio production'
+      'Managed session prep, patchbay configuration, outboard gear setup, and real-time troubleshooting under pressure',
+      'Acted as technical lead for incoming interns, guiding session setup and maintaining gear standards',
+      'Mentored peers in a fast-paced, high-expectation studio environment'
     ]
   }
 ];
@@ -166,12 +180,31 @@ export const systemScriptsSkills = [
 
 // Additional certifications and professional highlights
 export const professionalHighlights = [
-  'ITIL 4 Foundation Certified',
-  'ServiceNow Certified System Administrator',
-  'Microsoft Azure Fundamentals',
-  'Project Management Professional (PMP) - In Progress',
-  'Active Directory Specialist',
-  'Cross-platform Device Management Expert'
+  'Google Project Management Professional Certificate',
+  'Microsoft Azure Fundamentals (AZ-900) - Certification Preparation',
+  'ServiceNow: Basic Administration (LinkedIn Learning)',
+  'Intro to Service Management with ITIL 4 (LinkedIn Learning)',
+  'Bachelor of Science in Information Technology - In Progress, GPA 3.86',
+  'Cross-Platform Device Lifecycle Management Expert (Apple & Dell)'
+];
+
+// CyberArk Asset Lifecycle & Endpoint Support Project Data
+export const cyberArkOutcomes = [
+  'Delivered structured, repeatable, audit-friendly disposal workflow for Apple and Dell platforms',
+  'Redesigned off-boarding workflow, lifting monthly ticket capacity 111% during acquisition-driven peak volume',
+  'Built centralized ServiceNow dashboard covering off-boarding, recovery, reimaging, and disposal',
+  'Authored cross-platform secure erasure SOP spanning Apple silicon (T2-M5) and Dell hardware',
+  'Migrated ~120 endpoints to the Palo Alto Networks standard image during post-acquisition integration',
+  'Restored full asset lifecycle accuracy across Jamf, Intune, and ServiceNow after 91-device disposal',
+  'Rebuilt automated PowerShell imaging pipeline, keeping ~100 endpoints deploy-ready on demand',
+  'Implemented a 9-color physical inventory system for instant visual lifecycle triage'
+];
+
+export const cyberArkSkills = [
+  'ServiceNow Administration', 'Asset Lifecycle Management', 'Jamf', 'Microsoft Intune',
+  'Secure Data Erasure (Blancco)', 'Endpoint Imaging', 'Tier 2 Systems Support',
+  'Dashboard Design', 'SOP Documentation', 'M&A Endpoint Integration', 'Process Automation',
+  'PowerShell Scripting'
 ];
 
 // Contact information

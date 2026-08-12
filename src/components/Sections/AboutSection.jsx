@@ -1,13 +1,15 @@
 import { Users, TrendingUp, Target, Award } from 'lucide-react';
+import { memo, useMemo } from 'react';
 import { aboutStyles as styles } from '../../styles/constants/aboutStyles.js';
 
 function AboutSection() {
-  const approachItems = [
+  // Memoize the approach items to prevent recreation on every render
+  const approachItems = useMemo(() => [
     { icon: <Users size={20} />, title: 'Strategic Stakeholder Partnership Building', desc: 'Building bridges between business objectives and IT capabilities' },
     { icon: <TrendingUp size={20} />, title: 'Data-Driven Process Improvement', desc: 'Designing solutions based on real insights and measurable results' },
     { icon: <Target size={20} />, title: 'Cross-Functional Collaboration Leadership', desc: 'Bringing diverse perspectives together for optimal outcomes' },
     { icon: <Award size={20} />, title: 'Customer-Centric Service Delivery', desc: 'Keeping the end user at the center of every decision' }
-  ];
+  ], []);
 
   return (
     <section id="about" className={styles.section}>
@@ -32,6 +34,7 @@ function AboutSection() {
                 src="/images/digital-automation.jpg" 
                 alt="Digital Technology" 
                 className={styles.image + " rounded-lg"}
+                loading="lazy"
               />
               <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
                 <img 
@@ -39,6 +42,7 @@ function AboutSection() {
                   alt="Loyd Johnson Headshot" 
                   className="rounded-full object-cover border-4 border-cyan-400 shadow-2xl bg-slate-900" 
                   style={{ width: '85%', height: '85%', maxWidth: '420px', maxHeight: '90%', padding: '2.5%', boxSizing: 'border-box' }}
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -66,16 +70,16 @@ function AboutSection() {
         {/* Text Content - Full Width */}
         <div className={styles.textSection}>
           <p>
-            I'm an IT professional who believes technology should serve people, not the other way around. With over a decade of experience spanning customer service, operations management, and IT support, I've built my career on a simple principle: the best technical solutions are the ones that genuinely improve how people work and connect.
+            I'm an IT professional who believes technology should serve people, not the other way around. With over a decade of experience spanning enterprise endpoint support, asset lifecycle management, and operational leadership, I've built my career on a simple principle: the best technical solutions are the ones that genuinely improve how people work and connect.
           </p>
           <p>
             My operations background has taught me the importance of truly understanding how people work before implementing new technology. I've learned that the most successful solutions often aren't the most technically impressive ones—they're the ones that fit naturally into existing workflows and feel intuitive to the people using them. When I approach a new project, I spend time learning from the actual users: what works well in their current process, what frustrates them, and what would genuinely make their day easier. This collaborative approach helps me identify opportunities to reduce complexity and create solutions that people actually want to use.
           </p>
           <p>
-            Currently, I serve as an IT Client Support Specialist at Northeastern University, where I support 38,000+ students, 3,000+ faculty, and 4,000+ staff across 13 global campus locations. What energizes me most about this role is the opportunity to bridge the gap between complex IT capabilities and real human needs.
+            Currently, I'm delivering infrastructure and systems support at CyberArk, A Palo Alto Networks Company, through Beacon Hill Staffing, providing Tier 2 endpoint and systems support across the Americas region for a global cybersecurity enterprise. I most recently redesigned an enterprise off-boarding workflow that doubled monthly ticket capacity while the team itself shrank by three. Before that, I spent nearly four years as an IT Client Support Specialist at Northeastern University, supporting 38,000+ students, 3,000+ faculty, and 4,000+ staff across 13 global campus locations.
           </p>
           <p>
-            I'm deeply committed to continuous professional growth. In 2025, I completed the Google Project Management Professional Certificate and am on track to earn both AI in Professional Practice (Northeastern University) and CompTIA Network+ certifications in November. This combination of project management expertise, emerging technology fluency, and networking infrastructure knowledge positions me to lead technical initiatives that bridge operational excellence with strategic innovation.
+            I'm deeply committed to continuous professional growth. In 2025, I completed the Google Project Management Professional Certificate alongside coursework in ITIL 4 service management, ServiceNow administration, and Azure fundamentals, and I'm currently completing a BS in Information Technology (GPA: 3.86). This combination of project management expertise, systems administration depth, and operational leadership positions me to lead technical initiatives that bridge operational excellence with strategic innovation.
           </p>
           <p>
             My technical journey has interesting roots in the audio world. I'm a former recording engineer and trumpet player who performed with the Parkway Concert Orchestra, where I also served as stage manager before filling an available trumpet spot. I was the trumpet player for a Ska/Reggae band called Late Night Dial, bringing energy to the local music scene.
@@ -92,4 +96,4 @@ function AboutSection() {
   );
 }
 
-export default AboutSection;
+export default memo(AboutSection);

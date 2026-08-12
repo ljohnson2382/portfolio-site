@@ -1,0 +1,21 @@
+{
+  "name": "loydjohnson-crm-system",
+  "version": "1.0.0",
+  "description": "Lloyd Johnson Client Management CRM with Dual-Ticketing System",
+  "main": "index.js",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["azure-functions", "zoho-crm", "github-integration", "customer-management"],
+  "author": "Lloyd Johnson",
+  "license": "MIT",
+  "dependencies": {
+    "@azure/functions": "^4.5.1",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@azure/functions-core-tools": "^4.0.5"
+  }
+}
