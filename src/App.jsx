@@ -20,6 +20,9 @@ import {
   contactInfo
 } from './data/portfolio-data.js';
 import { scrollToSection } from './utils/helpers.js';
+
+// Get a free access key at https://web3forms.com (enter contact@loydjohnson.com) and paste it here.
+const WEB3FORMS_ACCESS_KEY = '283bc864-fa33-4edd-9b7a-ab36cde48af1';
 import { useScrollHandler } from './hooks/useScrollHandler.js';
 import { commonStyles } from './styles/constants/commonStyles.js';
 
@@ -32,6 +35,39 @@ import FloatingHomeButton from './components/Common/FloatingHomeButton.jsx';
 
 function App() {
   const { scrolled, activeSection, showHomeButton } = useScrollHandler();
+  const [contactForm, setContactForm] = useState({ name: '', email: '', message: '' });
+  const [contactStatus, setContactStatus] = useState('idle'); // idle | sending | success | error
+
+  const handleContactChange = (e) => {
+    const { name, value } = e.target;
+    setContactForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleContactSubmit = async (e) => {
+    e.preventDefault();
+    setContactStatus('sending');
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `Portfolio contact form: ${contactForm.name}`,
+          from_name: contactForm.name,
+          ...contactForm
+        })
+      });
+      const result = await response.json();
+      if (result.success) {
+        setContactStatus('success');
+        setContactForm({ name: '', email: '', message: '' });
+      } else {
+        setContactStatus('error');
+      }
+    } catch {
+      setContactStatus('error');
+    }
+  };
 
   // Helper function to get icon component by name
   const getIcon = (iconName, size = 24) => {
@@ -1447,38 +1483,57 @@ function App() {
             {/* Contact Form */}
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-lg p-8 border border-slate-700">
               <h3 className="text-2xl font-semibold mb-6 text-slate-200">Send a Message</h3>
-              <div className="space-y-4">
+              <form onSubmit={handleContactSubmit} className="space-y-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-300 mb-2">Name</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
+                    name="name"
+                    value={contactForm.name}
+                    onChange={handleContactChange}
+                    required
                     className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-400 text-slate-200"
                     placeholder="Your name"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-300 mb-2">Email</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
+                    name="email"
+                    value={contactForm.email}
+                    onChange={handleContactChange}
+                    required
                     className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-400 text-slate-200"
                     placeholder="your.email@example.com"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-300 mb-2">Message</label>
-                  <textarea 
+                  <textarea
+                    name="message"
+                    value={contactForm.message}
+                    onChange={handleContactChange}
+                    required
                     rows={5}
                     className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:border-cyan-400 text-slate-200"
                     placeholder="Your message..."
                   />
                 </div>
-                <button 
-                  onClick={() => alert('Contact form integration needed - for now, please email contact@loydjohnson.com directly')}
-                  className="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
+                <button
+                  type="submit"
+                  disabled={contactStatus === 'sending'}
+                  className="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {contactStatus === 'sending' ? 'Sending...' : 'Send Message'}
                 </button>
-              </div>
+                {contactStatus === 'success' && (
+                  <p className="text-sm text-green-400 text-center">Message sent — thanks for reaching out! I'll get back to you soon.</p>
+                )}
+                {contactStatus === 'error' && (
+                  <p className="text-sm text-red-400 text-center">Something went wrong. Please email contact@loydjohnson.com directly.</p>
+                )}
+              </form>
             </div>
 
             {/* Contact Info */}

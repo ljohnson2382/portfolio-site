@@ -38,9 +38,9 @@ export const skillsCategories = [
 // About section stats
 export const aboutStats = [
   { number: '5+', label: 'Years Experience' },
-  { number: '4000', label: 'Devices Lifecycle-Managed' },
+  { number: '1,093', label: 'Devices Lifecycle-Managed' },
   { number: '111%', label: 'Ticket Capacity Increase' },
-  { number: '2,500+', label: 'Tickets Resolved' }
+  { number: '2,000+', label: 'Tickets Resolved' }
 ];
 
 // Experience data
