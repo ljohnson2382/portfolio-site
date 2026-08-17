@@ -135,7 +135,7 @@ function PhotoComingSoon() {
                 style={{ width: `${progress}%` }}
               />
             </div>
-            <p className="text-xs text-slate-500 mt-2">Gallery framework in development</p>
+            <p className="text-xs text-slate-400 mt-2">Gallery framework in development</p>
           </div>
         </div>
 
@@ -177,7 +177,7 @@ function PhotoComingSoon() {
                 <Linkedin size={24} />
               </a>
             </div>
-            <p className="text-slate-500 text-sm mt-4">
+            <p className="text-slate-400 text-sm mt-4">
               © 2025 Loyd Johnson. All rights reserved.
             </p>
           </div>
