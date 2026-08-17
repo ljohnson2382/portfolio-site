@@ -60,9 +60,10 @@ function HeroSection({ onScrollToSection }) {
           ))}
         </div>
 
-        <button 
+        <button
           onClick={() => onScrollToSection('about')}
           className={styles.scrollBtn}
+          aria-label="Scroll to About section"
         >
           <ChevronDown size={32} />
         </button>
