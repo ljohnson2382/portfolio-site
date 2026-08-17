@@ -32,7 +32,7 @@ function AboutSection() {
             <div className="relative flex items-center justify-center h-full">
               <img 
                 src="/images/digital-automation.webp"
-                alt="Digital Technology" 
+                alt=""
                 className={styles.image + " rounded-lg"}
                 loading="lazy"
               />

@@ -110,6 +110,7 @@ function App() {
         onScrollToSection={handleScrollToSection}
       />
 
+      <main>
       {/* Hero Section */}
       <HeroSection onScrollToSection={handleScrollToSection} />
 
@@ -864,7 +865,7 @@ function App() {
                   <h5 className="text-xs font-semibold text-slate-400 mb-2 uppercase tracking-wide">Phase 3: SSL/TLS Security Implementation (Completed ✅)</h5>
                   <div className="grid md:grid-cols-3 gap-4">
                     <div>
-                      <p className="text-xs text-slate-500 mb-1">Certificate Management</p>
+                      <p className="text-xs text-slate-400 mb-1">Certificate Management</p>
                       <ul className="space-y-1 text-sm text-slate-300">
                         <li className="flex gap-2">
                           <span className="text-green-400">✓</span>
@@ -881,7 +882,7 @@ function App() {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500 mb-1">Security Validation</p>
+                      <p className="text-xs text-slate-400 mb-1">Security Validation</p>
                       <ul className="space-y-1 text-sm text-slate-300">
                         <li className="flex gap-2">
                           <span className="text-green-400">✓</span>
@@ -898,7 +899,7 @@ function App() {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs text-slate-500 mb-1">Platform Integration</p>
+                      <p className="text-xs text-slate-400 mb-1">Platform Integration</p>
                       <ul className="space-y-1 text-sm text-slate-300">
                         <li className="flex gap-2">
                           <span className="text-green-400">✓</span>
@@ -1614,6 +1615,7 @@ function App() {
           </div>
         </div>
       </section>
+      </main>
 
       {/* Footer */}
       <footer className="bg-slate-900 border-t border-slate-800 py-8">
@@ -1633,7 +1635,7 @@ function App() {
                 >
                   <Github size={20} />
                 </a>
-                <span className="text-slate-500 text-sm">
+                <span className="text-slate-400 text-sm">
                   Beyond technology: <a href="./photo.html" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300">photo.loydjohnson.com</a>
                 </span>
               </div>
