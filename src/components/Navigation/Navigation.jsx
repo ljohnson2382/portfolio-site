@@ -21,10 +21,12 @@ function Navigation({ scrolled, activeSection, onScrollToSection }) {
               style={{ padding: 0, background: 'none', border: 'none' }}
               aria-label="Home"
             >
-              <img 
-                src="/images/logo.loydjohnson.png" 
-                alt="Loyd Johnson Logo" 
-                style={{ height: '4rem', width: 'auto', maxWidth: '4rem', objectFit: 'contain', display: 'block' }} 
+              <img
+                src="/images/logo.loydjohnson.png"
+                alt="Loyd Johnson Logo"
+                width="77"
+                height="64"
+                style={{ height: '4rem', width: 'auto', maxWidth: '4rem', objectFit: 'contain', display: 'block' }}
               />
             </button>
           
@@ -46,9 +48,11 @@ function Navigation({ scrolled, activeSection, onScrollToSection }) {
           </div>
 
           {/* Mobile menu button */}
-          <button 
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={styles.mobileButton}
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

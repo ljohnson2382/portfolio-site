@@ -31,14 +31,14 @@ function AboutSection() {
           <div className={styles.imageContainer}>
             <div className="relative flex items-center justify-center h-full">
               <img 
-                src="/images/digital-automation.jpg" 
+                src="/images/digital-automation.webp"
                 alt="Digital Technology" 
                 className={styles.image + " rounded-lg"}
                 loading="lazy"
               />
               <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
                 <img 
-                  src="/images/headshot.jpg" 
+                  src="/images/headshot.webp"
                   alt="Loyd Johnson Headshot" 
                   className="rounded-full object-cover border-4 border-cyan-400 shadow-2xl bg-slate-900" 
                   style={{ width: '85%', height: '85%', maxWidth: '420px', maxHeight: '90%', padding: '2.5%', boxSizing: 'border-box' }}

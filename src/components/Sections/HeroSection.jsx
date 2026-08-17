@@ -11,10 +11,11 @@ function HeroSection({ onScrollToSection }) {
     <section id="home" className={styles.section}>
       <div className={styles.background}>
         {/* Background Image */}
-        <img 
-          src="/images/server-room.jpg" 
-          alt="" 
+        <img
+          src="/images/server-room.webp"
+          alt=""
           className={styles.bgImage}
+          fetchPriority="high"
         />
         <div className={styles.gradient1} />
         <div className={styles.gradient2} />
@@ -59,9 +60,10 @@ function HeroSection({ onScrollToSection }) {
           ))}
         </div>
 
-        <button 
+        <button
           onClick={() => onScrollToSection('about')}
           className={styles.scrollBtn}
+          aria-label="Scroll to About section"
         >
           <ChevronDown size={32} />
         </button>
