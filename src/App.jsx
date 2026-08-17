@@ -158,9 +158,10 @@ function App() {
           {/* Background Image */}
           <div className="absolute inset-0 opacity-5">
             <img 
-              src="/images/keyboard-alerts.jpg" 
-              alt="" 
+              src="/images/keyboard-alerts.webp"
+              alt=""
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           
@@ -1328,9 +1329,10 @@ function App() {
         {/* Background Image */}
         <div className="absolute inset-0 opacity-5">
           <img 
-            src="/images/ai-chip.jpg" 
-            alt="" 
+            src="/images/ai-chip.webp"
+            alt=""
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
         
